@@ -1,0 +1,1 @@
+draw_sprite(Wall1_Spr, 0, x, y);
