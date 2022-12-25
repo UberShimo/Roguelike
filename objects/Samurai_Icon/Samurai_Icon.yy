@@ -5,19 +5,19 @@
     "name": "Samurai_Icon",
     "eventList": [
         {
-            "id": "21a37cb3-038e-4b27-924e-dc7c909ba222",
+            "id": "3d8fc908-a54b-449f-a751-c18ab3fc9de7",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "513995d5-3503-448d-9d93-cfa8cac05986"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7de8686f-dcc6-4100-bd38-d758bf520946",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a663239a-4117-401d-8a02-3056f68ec259",
+    "spriteId": "b3a86636-fe15-4ccb-aa7e-62e90dcb2a0e",
     "visible": true
 }

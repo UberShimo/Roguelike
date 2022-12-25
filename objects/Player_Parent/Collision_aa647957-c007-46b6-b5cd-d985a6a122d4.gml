@@ -1,4 +1,4 @@
-if(!other.projectile || height < 2){
+if(controllable && (!other.projectile || height < 2)){
 	HP -= other.DMG * DEF;
 	cameraShake = 4;
 	alarm[2] = 8;

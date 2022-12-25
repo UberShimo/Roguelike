@@ -5,19 +5,19 @@
     "name": "Necromancer_Icon",
     "eventList": [
         {
-            "id": "91f0bbc7-aa8d-4a13-8076-53c8caae1624",
+            "id": "bb199039-1a48-4435-8ea2-e0aa0ab132ce",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "87564b00-d517-4f0c-8b6c-18382dd715b3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7de8686f-dcc6-4100-bd38-d758bf520946",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "5bc6bb9d-63ed-4c3c-901c-24ccb4d3de1a",
+    "spriteId": "b3a86636-fe15-4ccb-aa7e-62e90dcb2a0e",
     "visible": true
 }

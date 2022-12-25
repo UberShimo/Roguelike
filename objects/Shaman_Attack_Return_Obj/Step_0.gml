@@ -28,4 +28,4 @@ if(diff > 80){
 	instance_destroy();
 }
 
-speed += 1/60;
+speed += 1/120;

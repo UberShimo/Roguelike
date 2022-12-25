@@ -7,7 +7,8 @@ if(action == "attack"){
 		att.direction = direction + random_range(-aim, aim);
 		att.velocity = 24;
 	}
-	aim = 20;
+	aim = 20
+	canJump = true;
 }
 
 if(action == "ability"){
@@ -17,4 +18,4 @@ if(action == "ability"){
 	att.speed = 4;
 }
 
-FO = 0; // Never forget
+FO = 1; // Never forget

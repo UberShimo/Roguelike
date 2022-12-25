@@ -7,6 +7,7 @@ DMG = 2;
 stun = 12;
 
 initialDMG = DMG;
+rotationSpeed = 40;
 
 firstHit = noone;
 secondHit = noone;

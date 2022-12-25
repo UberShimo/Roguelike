@@ -8,7 +8,6 @@ if(action == "attack"){
 	
 	rotation = 2;
 	alarm[5] = 8;
-	FO = 0; // Never forget
 }
 
 if(action == "ability"){
@@ -18,3 +17,5 @@ if(action == "ability"){
 	att.y += lengthdir_y(16, direction);
 	att.DMG += att.DMG*FO;
 }
+
+FO = 1; // Never forget

@@ -5,19 +5,19 @@
     "name": "Paladin_Icon",
     "eventList": [
         {
-            "id": "c767f47d-7ba9-47d4-a881-43214faf3834",
+            "id": "77ce2672-e9ba-4863-a44c-eccd14b6f86c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "749d9965-5fb2-4d07-a57e-f329c63222b5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7de8686f-dcc6-4100-bd38-d758bf520946",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "9a9987a1-053d-48d4-825d-06e4d8ef7fa6",
+    "spriteId": "b3a86636-fe15-4ccb-aa7e-62e90dcb2a0e",
     "visible": true
 }

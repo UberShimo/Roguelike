@@ -2,7 +2,7 @@
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Samurai_Attack_Obj);
 	att.DMG += att.DMG*FO;
-	rotation = 0;
+	rotation = -2;
 }
 else if(action == "ability"){
 	slashDistance = 0; // Calculate xscale on attack
@@ -29,4 +29,4 @@ else if(action == "ability"){
 	att.image_xscale = slashDistance;
 }
 
-FO = 0; // Never forget
+FO = 1; // Never forget

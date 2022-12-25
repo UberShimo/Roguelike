@@ -1,15 +1,17 @@
 image_speed = 0;
 friction = 0.2;
 sprite_index = Shadow_Spr;
+depth = -y;
+direction = -90; // Face downwards
 
 // Stats
 HP = 100; // Health Points
 DEF = 1;
-FO = 0; // Focus
-maxFO = 0;
+FO = 1; // Focus
+maxFO = FO;
 AS = 1; // Attack Speed
 CD = 60; // Ability cooldown
-MS = 2; // Movement Speed
+MS = 1.5; // Movement Speed
 originalMS = MS; // Save original Movement Speed
 
 abilityReady = true; // Is your ability ready to fuck some ass?
@@ -22,6 +24,7 @@ heightSpeed = 0; // For jumping n stuff
 stepCheck = 0; // For stepping effect
 cameraShake = 0; // Shakes camera dramatically when taking damage
 characterShake = 0; // Shakes character dramatically when doing dramatic things
+controllable = false; // Can you move the character?
 
 characterSprite = noone;
 blendColor = c_white;

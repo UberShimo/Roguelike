@@ -1,3 +1,3 @@
-other.maxFO += 0.5;
+other.maxFO *= 1.5;
 
 instance_destroy();

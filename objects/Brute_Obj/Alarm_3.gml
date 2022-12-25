@@ -23,4 +23,4 @@ else if(action == "ability"){
 	MS = originalMS;
 }
 
-FO = 0; // Never forget
+FO = 1; // Never forget

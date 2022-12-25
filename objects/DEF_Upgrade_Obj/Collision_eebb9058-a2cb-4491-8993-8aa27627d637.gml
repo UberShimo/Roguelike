@@ -1,3 +1,3 @@
-other.DEF = other.DEF * 0.8;
+other.DEF *= 0.70;
 
 instance_destroy();

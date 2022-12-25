@@ -1,6 +1,6 @@
 event_inherited();
 
-HP = 100;
+HP = 50;
 MS = 1.5;
 originalMS = MS;
 

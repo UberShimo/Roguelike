@@ -7,7 +7,7 @@ repeat(3){
 	length = random_range(0, 24);
 	eff.x += lengthdir_x(length, dir);
 	eff.y += lengthdir_y(length, dir);
-	scale = irandom_range(1, 2);
+	scale = irandom_range(0.5, 1);
 	eff.image_xscale += scale;
 	eff.image_yscale += scale;
 }

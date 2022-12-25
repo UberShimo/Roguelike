@@ -23,7 +23,8 @@
         "17daba92-72d5-4a30-9df3-d0cc2120469c",
         "1af34d66-9f1f-43ec-ad8a-bd237ffb6883",
         "c28dbd3d-5b2e-45a9-aeeb-ef573d544aa9",
-        "810d3671-a12a-4745-b78c-6dc9e4dc686c"
+        "810d3671-a12a-4745-b78c-6dc9e4dc686c",
+        "8de078f3-875d-4a5e-9d84-d62b3fe637af"
     ],
     "filterType": "GMSprite",
     "folderName": "Classes",

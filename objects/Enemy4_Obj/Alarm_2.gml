@@ -12,16 +12,17 @@ else if(irandom_range(1, 2) == 1){ // 50% chance of Attacking
 		ySpawn = Player_Parent.y + random_range(-64, 64);
 	
 		warning = instance_create_depth(xSpawn, ySpawn, -ySpawn, Enemy4_Warning_Obj);
-		scale = random_range(1, 2);
+		scale = random_range(1, 2)*image_xscale; // Bullets scale with size
 		warning.image_xscale = scale;
 		warning.image_yscale = scale;
 		warning.DMG = DMG;
 		warning.spawner = self;
+		warning.alarm[1] = 60*AS;
 	}
 	
-	alarm[0] = 120;
-	alarm[2] = 120;
-	alarm[3] = 60;
+	alarm[0] = 120*AS;
+	alarm[2] = 120*AS;
+	alarm[3] = 60*AS;
 }
 else{
 	xDestination = irandom_range(-1, 1)  * 32;
@@ -31,5 +32,5 @@ else{
 }
 
 if(action == noone){
-	alarm[2] = 30;
+	alarm[2] = 30*AS;
 }

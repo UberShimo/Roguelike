@@ -5,19 +5,29 @@
     "name": "Chronomancer_Icon",
     "eventList": [
         {
-            "id": "340a9b74-409d-42c5-87b6-8a67203cba64",
+            "id": "10b3e48b-89ec-4baf-b78b-4c58dc1b73b2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "bd3d8c91-868b-4bc7-9d8a-491aa41e74f7"
+        },
+        {
+            "id": "ba4519a4-6fba-48b1-9146-bc70f278c900",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "bd3d8c91-868b-4bc7-9d8a-491aa41e74f7"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7de8686f-dcc6-4100-bd38-d758bf520946",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a8e7e9ae-eb8f-455e-a139-ed5e516439f9",
+    "spriteId": "b3a86636-fe15-4ccb-aa7e-62e90dcb2a0e",
     "visible": true
 }

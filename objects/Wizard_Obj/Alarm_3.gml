@@ -16,4 +16,4 @@ if(action == "ability"){
 	att.velocity = 2;
 }
 
-FO = 0; // Never forget
+FO = 1; // Never forget

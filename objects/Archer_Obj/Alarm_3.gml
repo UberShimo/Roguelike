@@ -26,4 +26,4 @@ if(action == "ability"){
 }
 
 trippleArrowCharge = 0;
-FO = 0; // Never forget
+FO = 1; // Never forget

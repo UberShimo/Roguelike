@@ -1,8 +1,8 @@
 event_inherited();
 
-DMG = 2;
+DMG = 12;
 stun = 120;
-pushback = 4;
+pushback = 6;
 
 image_xscale = 1.5;
 image_yscale = 1.5;

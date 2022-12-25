@@ -19,3 +19,11 @@ maxHP = HP;
 
 alarm[0] = 15;
 alarm[1] = 2;
+
+// Get outa wall
+dir = point_direction(x, y, Player_Parent.x, Player_Parent.y);
+
+while(place_meeting(x, y, Collision_Obj)){
+	x += lengthdir_x(4, dir);
+	y += lengthdir_y(4, dir);
+}

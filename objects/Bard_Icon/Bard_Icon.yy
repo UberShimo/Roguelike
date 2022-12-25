@@ -5,19 +5,29 @@
     "name": "Bard_Icon",
     "eventList": [
         {
-            "id": "153576f6-0606-4912-9594-1bead52a1054",
+            "id": "99423728-a7ef-4b8d-848f-e863fa4d11b6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c298abc3-03f7-4154-89b5-ca9b5db89570"
+        },
+        {
+            "id": "65f16b08-a108-44a3-9e3a-1ec323792cf6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "c298abc3-03f7-4154-89b5-ca9b5db89570"
         }
     ],
     "maskSpriteId": "9b9e84bd-4a0d-4aef-83df-eaa7a4ac5a3e",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7de8686f-dcc6-4100-bd38-d758bf520946",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "9b9e84bd-4a0d-4aef-83df-eaa7a4ac5a3e",
+    "spriteId": "b3a86636-fe15-4ccb-aa7e-62e90dcb2a0e",
     "visible": true
 }

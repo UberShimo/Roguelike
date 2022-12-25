@@ -1,6 +1,6 @@
 // Makes sure to not get stuck on walls
-x -= lengthdir_x(pushSpeed*2, pushDirection);
-y -= lengthdir_y(pushSpeed*2, pushDirection);
+x -= lengthdir_x(pushSpeed, pushDirection);
+y -= lengthdir_y(pushSpeed, pushDirection);
 
 if(pushSpeed > 2 || pushSpeed < -2){
 	// Fix negative pushspeed
@@ -10,7 +10,11 @@ if(pushSpeed > 2 || pushSpeed < -2){
 	HP -= pushSpeed*2;
 	MS = 0;
 	stunned = true;
-	alarm[1] = 20;
+	
+	// Makes so you cant remove stun duration
+	if(alarm[1] < 20){
+		alarm[1] = 20;
+	}
 	
 	repeat(6){
 		instance_create_depth(x, y, 0, Blood_Obj);

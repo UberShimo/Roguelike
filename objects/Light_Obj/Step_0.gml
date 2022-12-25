@@ -1,0 +1,1 @@
+image_alpha = random_range(0, 0.5);

@@ -21,20 +21,19 @@ if(hInput != 0 && vInput != 0){
 	vInput *= 0.65;
 }
 
+// Movement logic
 if(hInput != 0 || vInput != 0){
-	repeat(MS){
-		if(!place_meeting(x+hInput, y, Collision_Obj)){
-			x += hInput;
-		}
-		if(!place_meeting(x, y+vInput, Collision_Obj)){
-			y += vInput;
-		}
+	if(!place_meeting(x+hInput*MS, y, Collision_Obj)){
+		x += hInput*MS;
+	}
+	if(!place_meeting(x, y+vInput*MS, Collision_Obj)){
+		y += vInput*MS;
 	}
 	stepCheck += 1;
 }
 
 // Jump
-if(keyboard_check(vk_space) && canJump && alarm[3] <= 0 && MS > 0){
+if(keyboard_check(vk_space) && canJump && MS > 0){
 	heightSpeed = 3;
 	canJump = false;
 	alarm[11] = 40;
@@ -74,5 +73,5 @@ depth = -y;
 
 // Focus mechanic
 if(action == noone && FO < maxFO){
-	FO += maxFO / 180; // Charges in 3 sec
+	FO += (maxFO-1) / 180; // Charges in 3 sec
 }

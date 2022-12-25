@@ -18,7 +18,10 @@ if(action == noone){
 		warning = instance_create_depth(x, y, depth, Enemy2_Warning_Obj);
 		warning.image_angle = direction;
 		warning.spawner = self;
+		warning.image_xscale *= image_xscale;
+		warning.image_yscale *= image_yscale;
+		warning.alarm[1] = 30*AS;
 		
-		alarm[3] = 30;
+		alarm[3] = 30*AS;
 	}
 }

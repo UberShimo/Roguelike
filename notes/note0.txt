@@ -1,61 +1,17 @@
 TODO{
-	Fix random speed boosts.
-	Fix aim visualization for abilities?
-	Fix darkness.
+	Create the summoner.
+	You should be able to die...
+	Make music.
+	Make menu options.
 }
 
-Titles: "Quick dungeon" "Simons dungeon"
+Titles: "Summoners dungeon" "Dungeon the game"
 
-Enemy is spawned by spawners. Spawners spawn random enemies when touching ScreenArea.
-Over time more and more enemies spawn.
 
 Boss:
 The bastard (me):
 Just runs away from you in zig zag then gets exhausted and rests...
 Unless you are Bard. Then you jam together until you kill him!
-
-
-Classes:
-
-4 types (Power, Agility, Range, Magic)
-
-BASIC
-Slayer			Big sword swoosh / Mighty spin! Launch enemies away. If they hit wall they take dmg. Also deflect bullets
-Rogue			dagger slash / short dash / After 3 sec your next attack become a stab dealing MASSIVE dmg.
-Archer			bow shoot / charged spirit arrow that penetrates / After 3 sec you next attack shoots 3 arrows.
-Wizard			zap / fire ball. Zapping fireball blows it up!
-
-(Unlocked by winning with correct class)
-Gladiator		Spear stab / Shield bash. Stun enemies and deflect projectiles
-Samurai			katana slash / slice through enemies in straight line dealing big dmg / Killing enemy reduce ability cd by 1 sec.
-Arbalist		Repeater crossbow, shoot 5 arrows in sequence / Charge then shoot a gaint bolt that deal huge dmg and push back alot.
-Shaman			Shoot penetrating orb that then stays, grows, then comes back dealing extra dmg. / Teleport
-
-(Unlocked by winning with correct class)
-Paladin			Slam ground creating 3 explosions forward / Create AoE that heal over time (not above 100 HP) / Takes less dmg in front.
-Duelist			Do quick stab forward with daggers / Do a short dash. Has 2 stacks / After using ability next attack is 3 stabs!... But where does the 3rd stab come from?
-Toolist			Boomerang that accelerate. Higher speed deal more DMG / Put a trap that enemy get stuck in. last 12 sec 
-Necromancer		Shoot cloud that stays a while. Slows enemies / Summon zombie that slowly loose HP. / Attack heal zombies
-
-(Unlocked by winning with 100 HP or higher)
-Heavyweight		A pathetic punch that push back slightly / Do a slow roll... Meaning lots of invincibility frames! / Landing after jump deal AoE dmg.
-(Unlocked by winning fast)
-Reaper			Dash and then circle slash / Spawn a reap that pull toward you / Hitting enemy heal 1 HP (not above 100 HP)
-(Unlocked by winning without items)
-Ninja			Throw penetrating kunai / create clone for 8 sec that also throws kunai / hitting clone with kunai teleports you to it and destroys it.
-(Survive a run for 5 min or something)
-Chronomancer	Shoot innacurate bubbles frequently / Implode an area dealing huge dmg / 2 orbs orbit around you. They destroy projectiles and freeze enemies.
-
-(choose no class)
-Brute			Punch front and behind at same time / Charge a SUPER PUNCH dealing sick damage / Start with 150 HP.
-(Scratch on the class with mouse until it is revealed)
-Pirate			Dual sword Slash, Slash, SPIN! that deal double dmg / Shoot a bullet / has 2.5 MS
-(Click in the target practice in the background)
-Mechanic		Blast bullets. Hold attack to shoot more accurate. / Shoot laser that bounce 5 times
-(stay in class select for 30sec, The music man says "thanks for listening")
-Bard			Shoot one outa 3 projectiles / tunes randomly:
-				Thicc n slow (bass note), spread (high note), lots of tones spinning around you (mid chord) /
-				Play entire chord and spawn all types of attack
 
 
 3 levels:
@@ -67,5 +23,5 @@ There are 3 random maps that will be chosen for level 1 and 2.
 Level 3 is boss.
 
 You can get achievments on each class. (Win with over 100 HP, Win fast, Win without items, Beat certain time in endless mode)
-Beating game with a class unlocks next "Danger" level.
+Beating game with a class unlocks next "level".
 In "Endless mode" it spawns more and more monsters and you gotta survive as long as possible.

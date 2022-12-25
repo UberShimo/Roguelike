@@ -9,5 +9,5 @@ instance_destroy(other);
 
 // Die
 if(HP <= 0){
-	instance_destroy();
+	MonsterDies(self);
 }

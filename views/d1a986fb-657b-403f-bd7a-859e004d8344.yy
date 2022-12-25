@@ -24,7 +24,8 @@
         "e866b38d-26bc-496a-866e-249804988791",
         "8d81042b-4dca-4e9c-9798-fb3e4a368336",
         "abd46c44-797b-4438-a629-d0e4e8cf1c63",
-        "f513fb76-74dd-481f-bbfd-6a43eea0e25c"
+        "f513fb76-74dd-481f-bbfd-6a43eea0e25c",
+        "a2a52101-d560-4659-9de0-4d2a2385c722"
     ],
     "filterType": "GMObject",
     "folderName": "Classes",

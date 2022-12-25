@@ -5,19 +5,29 @@
     "name": "Reaper_Icon",
     "eventList": [
         {
-            "id": "f71e766c-a999-41d5-a771-7ffb95925b70",
+            "id": "cfaf1cff-2132-43b9-9169-9089b9c97074",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 6,
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "92331274-12ae-485a-9b75-7dc500409dcd"
+        },
+        {
+            "id": "3a37f589-8df1-4a7e-a37e-d2cc041a2985",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "92331274-12ae-485a-9b75-7dc500409dcd"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "7de8686f-dcc6-4100-bd38-d758bf520946",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "0351d955-e342-48fd-88af-11ff4e7289de",
+    "spriteId": "b3a86636-fe15-4ccb-aa7e-62e90dcb2a0e",
     "visible": true
 }

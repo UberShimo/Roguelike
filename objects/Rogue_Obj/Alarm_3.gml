@@ -11,4 +11,4 @@ else if(action == "attack"){
 }
 
 charge = 0;
-FO = 0; // Never forget
+FO = 1; // Never forget

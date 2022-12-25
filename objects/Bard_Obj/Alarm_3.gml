@@ -3,6 +3,11 @@
 if(action == "attack"){
 	rng = irandom_range(1, 5);
 	
+	while(rng == lastRng){
+		rng = irandom_range(1, 5);
+	}
+	lastRng = rng;
+	
 	if(rng == 1){
 		att = instance_create_depth(x, y, 0, Tone1_Obj);
 		att.DMG += att.DMG*FO;
@@ -111,4 +116,4 @@ if(action == "ability"){
 	audio_play_sound(Chord_Snd, 1, false);
 }
 
-FO = 0; // Never forget
+FO = 1; // Never forget

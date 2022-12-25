@@ -9,7 +9,7 @@ else if(irandom_range(1, 4) == 1){ // 25% chance of Attacking
 	
 	sprite_index = Monster5_Attack_Spr;
 	
-	alarm[3] = 60;
+	alarm[3] = 60*AS;
 }
 else{
 	xDestination = irandom_range(-1, 1)  * 32;
@@ -19,5 +19,5 @@ else{
 }
 
 if(action == noone){
-	alarm[2] = 30;
+	alarm[2] = 30*AS;
 }

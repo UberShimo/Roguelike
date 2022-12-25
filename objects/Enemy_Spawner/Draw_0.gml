@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index, (alarm[0]/timer)*image_number, x, y, image_xscale, image_yscale, 0, c_white, image_alpha);

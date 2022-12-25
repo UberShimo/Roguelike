@@ -4,6 +4,7 @@ eff.image_yscale = image_yscale;
 eff.image_angle = direction;
 eff.image_alpha = image_alpha;
 eff.image_blend = image_blend;
+eff.fade = 0.002;
 
 image_angle = direction;
 direction += curve;

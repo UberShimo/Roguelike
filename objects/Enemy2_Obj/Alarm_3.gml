@@ -3,6 +3,8 @@ image_index = 1;
 hitbox = instance_create_depth(x, y, 0, Enemy2_Hitbox_Obj);
 hitbox.image_angle = direction;
 hitbox.DMG = DMG;
+hitbox.image_xscale *= image_xscale;
+hitbox.image_yscale *= image_yscale;
 
 eff = instance_create_depth(x, y, depth, Enemy2_Attack_eff_Obj);
 eff.spawner = self;
@@ -30,4 +32,7 @@ else{
 	eff.sprite_index = Monster2_ATK_Eff_2_Spr;
 }
 
-alarm[0] = 30;
+eff.image_xscale *= image_xscale;
+eff.image_yscale *= image_yscale;
+
+alarm[0] = 30*AS;

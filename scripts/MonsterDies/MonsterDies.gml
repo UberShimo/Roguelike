@@ -18,4 +18,6 @@ if(irandom_range(1, 5) == 1){ // 20% chance
 	instance_create_depth(monster.x, monster.y, monster.depth, HP_Obj);
 }
 
+global.monstersSlain += 1;
+
 instance_destroy(monster);

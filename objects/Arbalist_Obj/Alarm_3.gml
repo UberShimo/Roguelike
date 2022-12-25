@@ -21,4 +21,4 @@ if(action == "ability"){
 	speed = -4; // Pushes yourself back
 }
 
-FO = 0; // Never forget
+FO = 1; // Never forget
