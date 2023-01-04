@@ -3,6 +3,7 @@ event_inherited();
 sprite = Mechanic_Spr;
 classObject = Mechanic_Obj;
 level = global.mechanicLevel;
+className = "Mechanic";
 
 portrait = Mechanic_Portrait_Spr;
 attackDescription = "Shoot bullets";

@@ -20,7 +20,7 @@ if(controllable){
 		rotation = 1;
 	
 		alarm[0] = 90;
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
 		alarm[3] = 60;
 	}
 

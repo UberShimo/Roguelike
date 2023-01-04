@@ -45,6 +45,6 @@ if(controllable){
 			clone.y -= yDistance;
 		}
 	
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
 	}
 }

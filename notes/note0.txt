@@ -1,27 +1,7 @@
 TODO{
-	Create the summoner.
-	You should be able to die...
-	Make music.
-	Make menu options.
+	Fix icon and splash art n shit
+	Test and balance
+	REMOVE DEPTH 3 SHORTCUT!
 }
 
-Titles: "Summoners dungeon" "Dungeon the game"
-
-
-Boss:
-The bastard (me):
-Just runs away from you in zig zag then gets exhausted and rests...
-Unless you are Bard. Then you jam together until you kill him!
-
-
-3 levels:
-1: monsters with 2 items.
-2: more monsters with 2 items.
-3: Boss
-
-There are 3 random maps that will be chosen for level 1 and 2.
-Level 3 is boss.
-
-You can get achievments on each class. (Win with over 100 HP, Win fast, Win without items, Beat certain time in endless mode)
-Beating game with a class unlocks next "level".
-In "Endless mode" it spawns more and more monsters and you gotta survive as long as possible.
+Title: "Evil summoner dungeon"

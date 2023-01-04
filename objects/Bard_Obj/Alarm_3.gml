@@ -18,12 +18,12 @@ if(action == "attack"){
 	else if(rng == 2){
 		dir = 0;
 		
-		repeat(12){
+		repeat(8){
 			att = instance_create_depth(x, y, 0, Tone2_Obj);
 			att.DMG += att.DMG*FO;
 			att.direction = dir;
 			att.velocity = 2;
-			dir += 30;
+			dir += 45;
 		}
 		audio_play_sound(Tone2_Snd, 1, false);
 	}
@@ -45,7 +45,7 @@ if(action == "attack"){
 		audio_play_sound(Tone3_Snd, 1, false);
 	}
 	else if(rng == 4){
-		repeat(8){
+		repeat(3){
 			att = instance_create_depth(x, y, 0, Tone4_Obj);
 			att.DMG += att.DMG*FO;
 			att.direction = direction+random_range(-40, 40);
@@ -75,12 +75,12 @@ if(action == "ability"){
 	
 	dir = 0;
 		
-	repeat(12){
+	repeat(8){
 		att = instance_create_depth(x, y, 0, Tone2_Obj);
 		att.DMG += att.DMG*FO;
 		att.direction = dir;
 		att.velocity = 2;
-		dir += 30;
+		dir += 45;
 	}
 	
 	dir = direction;
@@ -98,7 +98,7 @@ if(action == "ability"){
 		dir += 120;
 	}
 	
-	repeat(8){
+	repeat(3){
 		att = instance_create_depth(x, y, 0, Tone4_Obj);
 		att.DMG += att.DMG*FO;
 		att.direction = direction+random_range(-40, 40);

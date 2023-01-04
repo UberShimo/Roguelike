@@ -4,7 +4,7 @@ if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Necromancer_Attack_Obj);
 	att.DMG += att.DMG*FO;
 	att.direction = direction;
-	att.speed = 3.5;
+	att.speed = 2.5;
 	att.friction = 0.1;
 }
 

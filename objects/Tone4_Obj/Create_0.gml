@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 15;
+DMG = 12;
 curve = random_range(-12, 12);
 alarmTimer = random_range(8, 16);
 alarm[1] = alarmTimer;

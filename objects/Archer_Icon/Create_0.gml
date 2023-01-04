@@ -3,6 +3,7 @@ event_inherited();
 sprite = Archer_Spr;
 classObject = Archer_Obj;
 level = global.archerLevel;
+className = "Archer";
 
 portrait = Archer_Portrait_Spr;
 attackDescription = "Shoot arrow";

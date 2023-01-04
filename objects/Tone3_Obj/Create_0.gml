@@ -1,7 +1,7 @@
 event_inherited();
 
-DMG = 25;
-curve = 30;
+DMG = 4;
+curve = 20;
 
 image_xscale = 0.2;
 image_yscale = 0.05;

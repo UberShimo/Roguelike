@@ -7,8 +7,9 @@ if(global.debugManLevel == 0){
 sprite = DebugMan_Spr;
 classObject = DebugMan_Obj;
 level = 1;
+className = "Debug Man";
 
 portrait = Portrait_Spr;
-attackDescription = "Debug";
-abilityDescription = "Man";
+attackDescription = "Push";
+abilityDescription = "Q)(F#!=0";
 bonusDescription = "Scroll to zoom.";

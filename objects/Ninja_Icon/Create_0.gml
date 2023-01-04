@@ -3,6 +3,7 @@ event_inherited();
 sprite = Ninja_Spr;
 classObject = Ninja_Obj;
 level = global.ninjaLevel;
+className = "Ninja";
 
 portrait = Ninja_Portrait_Spr;
 attackDescription = "Throw a penetrating kunai";

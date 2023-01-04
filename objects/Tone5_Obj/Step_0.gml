@@ -6,4 +6,4 @@ eff.image_yscale = image_yscale;
 eff.image_angle = direction;
 eff.image_blend = image_blend;
 eff.image_alpha = 0.2;
-eff.fade = 0.001;
+eff.fade = 0.002;

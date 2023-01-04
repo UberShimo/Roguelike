@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 3;
+DMG = 2;
 stun = 1;
 
 scale = random_range(0.2, 0.3);
@@ -10,3 +10,5 @@ image_yscale = scale;
 image_blend = c_aqua;
 
 alarm[0] = 8;
+
+audio_play_sound(Plopp_Snd, 0, false);

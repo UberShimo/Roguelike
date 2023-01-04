@@ -3,6 +3,7 @@ event_inherited();
 sprite = Chronomancer_Spr;
 classObject = Chronomancer_Obj;
 level = global.chronomancerLevel;
+className = "Chronomancer";
 
 portrait = Chronomancer_Portrait_Spr;
 attackDescription = "Spay orbs";

@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 25;
+DMG = 8;
 velocityChange = -0.25;
 
 alarm[1] = 8;

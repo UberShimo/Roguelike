@@ -31,7 +31,7 @@ if(controllable){
 		sprite_index = Heavyweight_Ability_Spr;
 	
 		alarm[0] = 30;
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
 		alarm[3] = 2;
 	}
 

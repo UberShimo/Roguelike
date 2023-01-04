@@ -3,6 +3,7 @@ event_inherited();
 sprite = Arbalist_Spr;
 classObject = Arbalist_Obj;
 level = global.arbalistLevel;
+className = "Arbalist";
 
 portrait = Arbalist_Portrait_Spr;
 attackDescription = "Shoot 5 bolts in succession";

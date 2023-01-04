@@ -9,7 +9,8 @@
         "09bafcf1-390b-425c-a2e5-94dc8dc3b0c7",
         "c0fd931c-e321-479d-a51b-60677e4a7609",
         "efdc3907-f164-4d16-925b-ffd714b95373",
-        "23a65a96-ebac-4905-a5a1-2721704e64bb"
+        "23a65a96-ebac-4905-a5a1-2721704e64bb",
+        "5dcac7cb-39d6-439a-b558-9505e9bf3e6f"
     ],
     "filterType": "GMObject",
     "folderName": "Pirate",

@@ -1,6 +1,7 @@
 sprite = noone;
 classObject = noone;
 level = 0;
+className = "";
 
 portrait = Portrait_Spr;
 attackDescription = "";

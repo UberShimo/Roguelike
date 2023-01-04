@@ -1,4 +1,4 @@
-depth = -y;
+depth = -y-8;
 
 image_xscale = 2;
 image_yscale = 2;

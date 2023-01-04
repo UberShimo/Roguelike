@@ -3,6 +3,7 @@ event_inherited();
 sprite = Toolist_Spr;
 classObject = Toolist_Obj;
 level = global.toolistLevel;
+className = "Simon";
 
 portrait = Toolist_Portrait_Spr;
 attackDescription = "Throw an accelerating weapon";

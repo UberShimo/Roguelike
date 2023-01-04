@@ -1,0 +1,1 @@
+draw_sprite_ext(Pixel_Spr, 0, xPos, yPos, pixelMultiplier, pixelMultiplier, 0, c_white, 0.5);

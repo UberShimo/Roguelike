@@ -39,6 +39,18 @@ if(keyboard_check(vk_space) && canJump && MS > 0){
 	alarm[11] = 40;
 }
 
+// Abandon mission
+if(keyboard_check(vk_escape) && returning < 1){
+	returning += 1/60;
+}
+else if(returning < 1 && returning > 0){
+	returning -= 1/60;
+}
+else if(returning >= 1 && BlackScreen_Controller.fade < 0){
+	BlackScreen_Controller.fade = 0.02;
+	BlackScreen_Controller.nextRoom = Class_Select;
+}
+
 // Walking effect
 if(stepCheck >= 8 && height < 2){
 	stepCheck = 0;

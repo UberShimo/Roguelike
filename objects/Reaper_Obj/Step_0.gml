@@ -5,29 +5,12 @@ if(controllable){
 	if(mouse_check_button(mb_left) && action == noone && height < 2){
 		action = "attack";
 		rotation = -1;
-		MS = 0;
+		dodging = true;
+		MS = originalMS*2;
 	
 		alarm[3] = 20 * AS;
 		alarm[0] = 60 * AS;
 		alarm[5] = 40 * AS;
-	
-		// Dash
-		xDistance = lengthdir_x(4, direction);
-		yDistance = lengthdir_y(4, direction);
-	
-		// Complex step checking dash execution
-		loops = 18;
-		while(loops > 0){
-			if(place_meeting(x+xDistance, y+yDistance, Collision_Obj) || 
-			(x > mouse_x-2 && x < mouse_x+2) && (y > mouse_y-2 && y < mouse_y+2)){
-				break;
-			}
-			loops -= 1;
-		
-			instance_create_depth(x, y, 10, Reaper_Teleport_Effect);
-			x += xDistance;
-			y += yDistance;
-		}
 	}
 
 	// Ability
@@ -37,6 +20,15 @@ if(controllable){
 	
 		alarm[3] = 2;
 		alarm[0] = 4;
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
+	}
+	
+	// Dodge effect
+	if(dodging){
+		instance_create_depth(x, y, depth, Reaper_Dodge_Effect);
+		transparency = 0.2;
+	}
+	else if(MS < originalMS){
+		MS += 0.05;
 	}
 }

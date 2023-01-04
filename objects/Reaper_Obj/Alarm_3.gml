@@ -3,9 +3,11 @@ if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Reaper_Attack_Obj);
 	att.DMG += att.DMG*FO;
 	spin = 1;
+	MS = 0;
+	dodging = false;
+	transparency = 1;
 	
-	MS = originalMS;
-	alarm[5] = 8;
+	alarm[5] = 8*AS;
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Reaper_Ability_Obj);

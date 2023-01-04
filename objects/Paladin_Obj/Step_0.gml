@@ -19,6 +19,6 @@ if(controllable){
 	
 		alarm[3] = 30;
 		alarm[0] = 60;
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
 	}
 }

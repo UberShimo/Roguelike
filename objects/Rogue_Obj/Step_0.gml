@@ -2,7 +2,7 @@ if(controllable){
 	event_inherited();
 
 	// Attack
-	if(mouse_check_button(mb_left) && action == noone && height < 2){
+	if(mouse_check_button(mb_left) && action == noone && height < 2 && !dodging){
 		if(charge >= 180){
 			action = "chargeAttack";
 			rotation = 3;
@@ -16,63 +16,23 @@ if(controllable){
 		alarm[11] = 24 * AS;
 	}
 
-	// Dash
+	// Ability
 	if(mouse_check_button_pressed(mb_right) && abilityReady && height < 2){
 		abilityReady = false;
+		dodging = true;
+		MS = 16;
 	
-		// Choose direction
-		if(keyboard_check(ord("D")) && keyboard_check(ord("W"))){
-			xDistance = lengthdir_x(4, 45);
-			yDistance = lengthdir_y(4, 45);
-		}
-		else if(keyboard_check(ord("W")) && keyboard_check(ord("A"))){
-			xDistance = lengthdir_x(4, 135);
-			yDistance = lengthdir_y(4, 135);
-		}
-		else if(keyboard_check(ord("A")) && keyboard_check(ord("S"))){
-			xDistance = lengthdir_x(4, 225);
-			yDistance = lengthdir_y(4, 225);
-		}
-		else if(keyboard_check(ord("S")) && keyboard_check(ord("D"))){
-			xDistance = lengthdir_x(4, 315);
-			yDistance = lengthdir_y(4, 315);
-		}
-		else if(keyboard_check(ord("D"))){
-			xDistance = lengthdir_x(4, 0);
-			yDistance = lengthdir_y(4, 0);
-		}
-		else if(keyboard_check(ord("W"))){
-			xDistance = lengthdir_x(4, 90);
-			yDistance = lengthdir_y(4, 90);
-		}
-		else if(keyboard_check(ord("A"))){
-			xDistance = lengthdir_x(4, 180);
-			yDistance = lengthdir_y(4, 180);
-		}
-		else if(keyboard_check(ord("S"))){
-			xDistance = lengthdir_x(4, 270);
-			yDistance = lengthdir_y(4, 270);
-		}
-		else{
-			xDistance = lengthdir_x(4, direction);
-			yDistance = lengthdir_y(4, direction);
-		}
+		alarm[1] = CD*CDchanger;
+	}
 	
-		// Complex step checking dash execution
-		loops = 12;
-		while(loops > 0){
-			if(place_meeting(x+xDistance, y+yDistance, Collision_Obj) || 
-			(x > mouse_x-2 && x < mouse_x+2) && (y > mouse_y-2 && y < mouse_y+2)){
-				break;
-			}
-			loops -= 1;
-		
-			instance_create_depth(x, y, 10, Rogue_Teleport_Effect);
-			x += xDistance;
-			y += yDistance;
-		}
-	
-		alarm[1] = CD;
+	// Dodging
+	if(MS > originalMS){
+		MS -= 2;
+		instance_create_depth(x, y, depth, Rogue_Dodge_Effect);
+	}
+	else{
+		MS = originalMS;
+		dodging = false;
 	}
 
 	// Charge mechanic

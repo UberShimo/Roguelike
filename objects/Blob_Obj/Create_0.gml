@@ -1,3 +1,5 @@
+event_inherited();
+
 isBig = false;
 
 height = 2;

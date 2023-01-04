@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 20;
+DMG = 12;
 stun = 16;
 
 scaleChange = -0.05;

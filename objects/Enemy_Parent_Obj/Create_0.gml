@@ -14,7 +14,9 @@ action = noone; // What are you doing?
 stunned = false;
 transparency = 1;
 pushDirection = 0;
-pushSpeed = 0;
+xPush = 0;
+yPush = 0;
+frictionAmount = 0.5;
 shake = 0;
 
 hitboxList = ds_list_create();

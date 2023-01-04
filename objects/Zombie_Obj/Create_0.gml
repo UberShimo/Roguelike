@@ -17,7 +17,7 @@ originalDecayAmount = decayAmount;
 // Dont ever forget
 maxHP = HP;
 
-alarm[0] = 15;
+alarm[0] = 30;
 alarm[1] = 2;
 
 // Get outa wall
@@ -27,3 +27,19 @@ while(place_meeting(x, y, Collision_Obj)){
 	x += lengthdir_x(4, dir);
 	y += lengthdir_y(4, dir);
 }
+
+// Spawn effect
+repeat(12){
+	eff = instance_create_depth(x, y, depth, Fading_Pixel_Obj);
+	eff.image_blend = c_green;
+	eff.fade = 0.05;
+	eff.x += random_range(-2, 2);
+	eff.y += random_range(-2, 2);
+	eff.image_xscale += random_range(1, 4);
+	eff.image_yscale += random_range(1, 4);
+	eff.direction = random_range(0, 360);
+	eff.speed = random_range(1, 4);
+	eff.friction = 0.1;
+}
+
+audio_play_sound(Mystic_Snd, 0, false);

@@ -19,7 +19,7 @@ if(controllable){
 		abilityReady = false;
 	
 		alarm[3] = 4;
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
 		alarm[0] = 8;
 	}
 }

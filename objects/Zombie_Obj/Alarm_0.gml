@@ -6,4 +6,4 @@ if(HP > 1){
 	decayAmount += originalDecayAmount;
 }
 
-alarm[0] = 15;
+alarm[0] = 30;

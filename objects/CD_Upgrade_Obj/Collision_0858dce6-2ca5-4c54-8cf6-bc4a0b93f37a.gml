@@ -1,7 +1,9 @@
-other.CD *= 0.60;
+event_inherited();
 
-if(other.alarm[1] > other.CD){
-	other.alarm[1] = other.CD;
+other.CDchanger *= 0.60;
+
+if(other.alarm[1] > other.CD*other.CDchanger){
+	other.alarm[1] = other.CD*other.CDchanger;
 }
 
 instance_destroy();

@@ -16,6 +16,7 @@ if(ds_list_find_index(hitboxList, other) == -1){
 			instance_create_depth(x, y, 0, Blood_Obj);
 			instance_create_depth(x, y, 0, Hit_Eff_Obj);
 		}
+		audio_play_sound(Hit_Snd, 0, false);
 	}
 	
 	// Pushback
@@ -25,7 +26,8 @@ if(ds_list_find_index(hitboxList, other) == -1){
 	else{
 		pushDirection = point_direction(other.x, other.y, x, y);
 	}
-	pushSpeed = other.pushback;
+	xPush = lengthdir_x(other.pushback, pushDirection);
+	yPush = lengthdir_y(other.pushback, pushDirection);
 	
 	if(HP <= 0){
 		MonsterDies(self);

@@ -21,7 +21,7 @@ if(controllable){
 	
 		alarm[3] = 4;
 		alarm[0] = 16;
-		alarm[1] = CD;
+		alarm[1] = CD*CDchanger;
 		alarm[11] = 16;
 	}
 }

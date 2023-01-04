@@ -9,6 +9,7 @@ if(action == "attack"){
 			att.y += lengthdir_y(reposition, direction+90);
 		}
 		trippleStrike = false;
+		att.image_xscale *= 1.5;
 	}
 	
 	att = instance_create_depth(x, y, 0, Duelist_Attack_Obj);

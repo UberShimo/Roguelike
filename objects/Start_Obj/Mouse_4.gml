@@ -1,5 +1,9 @@
-if(global.pickedClass == noone){
-	global.pickedClass = Brute_Spr;
+BlackScreen_Controller.fade = 0.02;
+
+difficulty = 1;
+
+repeat(level-1){ // 10% inc per level
+	difficulty *= 1.1;
 }
 
-BlackScreen_Controller.fade = 0.02;
+global.difficultyScaling = difficulty; 

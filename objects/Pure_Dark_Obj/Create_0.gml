@@ -1,1 +1,1 @@
-depth = -y;
+depth = -room_height;

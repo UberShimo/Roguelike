@@ -1,6 +1,8 @@
 event_inherited();
 
-CD = 6*60;
+CD = 3*60;
+MS = 1.25;
+originalMS = MS;
 rolling = false;
 landPAM = false;
 

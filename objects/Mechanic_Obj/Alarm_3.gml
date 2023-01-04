@@ -9,6 +9,8 @@ if(action == "attack"){
 	}
 	aim = 20
 	canJump = true;
+
+	audio_play_sound(Shot_Snd, 0, false);
 }
 
 if(action == "ability"){

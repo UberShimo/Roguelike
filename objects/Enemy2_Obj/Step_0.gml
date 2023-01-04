@@ -2,7 +2,7 @@ if(action == noone){
 	// Move toward player while trying to dodge walls
 	mp_potential_step_object(Player_Parent.x, Player_Parent.y, MS, Collision_Obj);
 
-	if(distance_to_object(Player_Parent) < 16){
+	if(distance_to_object(Player_Parent) < 16*image_xscale){
 		direction = point_direction(x, y, Player_Parent.x, Player_Parent.y); // Face toward player
 		
 		if(direction > 30 && direction <= 150){ // Up
