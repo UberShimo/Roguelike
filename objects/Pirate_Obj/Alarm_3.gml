@@ -1,13 +1,13 @@
 /// @description ACTION!
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Pirate_Attack_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	
 	rotation = -2;
 	
 	if(combo >= 2){
 		att = instance_create_depth(x, y, 0, Pirate_Attack3_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = direction;
 		spin = -1;
 		combo = 0;
@@ -20,7 +20,7 @@ if(action == "attack"){
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Pirate_Bullet_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.velocity = 48;
 	att.direction = direction;
 	

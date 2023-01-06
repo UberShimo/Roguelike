@@ -5,8 +5,15 @@ if(controllable){
 	if(mouse_check_button(mb_left) && action == noone && height < 2){
 		action = "attack";
 	
-		alarm[3] = 2 * AS;
-		alarm[0] = 8 * AS;
+		alarm[3] = 6 * AS;
+		alarm[0] = 12 * AS;
+		// For safety so alarm 3 cant go to 0
+		if(alarm[3] < 1){
+			alarm[3] = 1;
+		}// For safety so alarm 0 cant go to 0
+		if(alarm[0] < 2){
+			alarm[0] = 2;
+		}
 	}
 
 	// Ability

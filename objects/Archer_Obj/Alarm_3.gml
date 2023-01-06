@@ -2,13 +2,13 @@
 
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Archer_Arrow_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.direction = direction;
 	att.velocity = 16;
 	
 	if(trippleArrowCharge >= 120){
 		att2 = instance_create_depth(x, y, 0, Archer_Arrow_Obj);
-		att2.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att2.direction = direction+4;
 		att2.velocity = 16;
 		att3 = instance_create_depth(x, y, 0, Archer_Arrow_Obj);
@@ -20,7 +20,7 @@ if(action == "attack"){
 
 if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Archer_Magic_Arrow_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.direction = direction;
 	att.velocity = 16;
 }

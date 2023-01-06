@@ -12,7 +12,7 @@ if(controllable){
 	}
 
 	// Ability
-	if(mouse_check_button_pressed(mb_right) && action == noone && abilityReady && height < 2){
+	if(mouse_check_button_pressed(mb_right) && abilityReady && height < 2){
 		action = "ability";
 		canJump = false;
 		abilityReady = false;

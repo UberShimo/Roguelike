@@ -4,7 +4,7 @@ if(controllable){
 	// Attack
 	if(mouse_check_button(mb_left) && action == noone && height < 2){
 		action = "attack";
-		alarm[3] = 4 * AS;
+		alarm[3] = 2;
 		alarm[0] = 90 * AS;
 	}
 

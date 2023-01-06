@@ -5,11 +5,11 @@ if(distance_to_object(Player_Parent) > 96){ // walk towards player
 }
 else if(irandom_range(1, 4) == 1){ // 25% chance of Attacking
 	action = "attack";
-	bullets = 24;
+	shake = 1;
 	
 	sprite_index = Monster5_Attack_Spr;
 	
-	alarm[3] = 60*AS;
+	alarm[3] = 120*AS;
 }
 else{
 	xDestination = irandom_range(-1, 1)  * 32;

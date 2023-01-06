@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "10ca1402-a57e-4579-95a0-7790d09ff9d3",
+            "Value": {
+                "id": "9f53e99a-5539-4f4b-9361-eb5bcad49ffa",
+                "resourcePath": "objects\\Dummy_Obj\\Dummy_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "10d40fc5-bb4a-4be2-b332-c7cdd3e242c4",
             "Value": {
                 "id": "988fcca9-0a66-4655-bf8f-8041e30e473b",
@@ -1047,6 +1055,14 @@
             }
         },
         {
+            "Key": "3ee16ac7-7423-44ee-b24d-1c4d12c12aa6",
+            "Value": {
+                "id": "93d1c79d-96ca-411e-8cf5-269ef1133f9c",
+                "resourcePath": "objects\\Shaman_Ability_Hitbox_Obj\\Shaman_Ability_Hitbox_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3febd17f-e074-4da5-bdb3-603fdc99d6b6",
             "Value": {
                 "id": "6cd19277-e930-4487-9094-4bea9ded5e28",
@@ -1479,6 +1495,14 @@
             }
         },
         {
+            "Key": "5b2d2a61-6178-4190-8cb0-3b5404739331",
+            "Value": {
+                "id": "9cc2e5e6-33e6-4dc1-a664-f599dc9d20f7",
+                "resourcePath": "sprites\\Reaper_Tired_Spr\\Reaper_Tired_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5bc6bb9d-63ed-4c3c-901c-24ccb4d3de1a",
             "Value": {
                 "id": "8dcdaf06-541b-4aa2-969d-ed7f4951c5c2",
@@ -1847,6 +1871,14 @@
             }
         },
         {
+            "Key": "710995ad-9e67-4288-b3b8-68ac7499a8ff",
+            "Value": {
+                "id": "58502408-eae3-480c-af30-562357f7815c",
+                "resourcePath": "sprites\\Fullscreen_Spr\\Fullscreen_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "71238d67-827c-4075-a179-938924dde220",
             "Value": {
                 "id": "d8f3e268-17ce-491d-b275-4a7a68ee7d7e",
@@ -2132,6 +2164,14 @@
                 "id": "0f73a682-8b7d-42b9-b381-d945b254ee88",
                 "resourcePath": "sprites\\Hit_Eff_Spr\\Hit_Eff_Spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "81ed396f-fb50-483e-b2ed-f9181ce33329",
+            "Value": {
+                "id": "aa3226ac-ce7c-4fcf-856a-6d9c8d6dbc82",
+                "resourcePath": "sounds\\Zombie_Snd\\Zombie_Snd.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2575,6 +2615,14 @@
             }
         },
         {
+            "Key": "9d12f071-0f48-436f-9ec0-11ba73e944a6",
+            "Value": {
+                "id": "2e93183a-06d4-4a65-b6de-f13fe362d2bf",
+                "resourcePath": "objects\\Fullscreen_Obj\\Fullscreen_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9d5aa699-67cb-4dc8-addd-d96423516324",
             "Value": {
                 "id": "f0bf519a-57db-4b61-b939-e865293530c3",
@@ -2699,6 +2747,14 @@
             "Value": {
                 "id": "3e55651c-0a0c-4124-80e3-3c71d29470ed",
                 "resourcePath": "sprites\\Rogue_Spr\\Rogue_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a88f2511-668c-4a2d-8483-82a654928e82",
+            "Value": {
+                "id": "2deafcce-a748-4eb9-928c-250a44105be3",
+                "resourcePath": "sprites\\Reaper_Attack_Tip_Spr\\Reaper_Attack_Tip_Spr.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3223,6 +3279,14 @@
             }
         },
         {
+            "Key": "c7d424a4-0197-403f-bd4c-ef7a65fe96a8",
+            "Value": {
+                "id": "a074a384-e0ed-48d6-91bc-d1f967706b9f",
+                "resourcePath": "objects\\Reaper_Attack_Tip_Obj\\Reaper_Attack_Tip_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c7eeed69-14e8-440a-bc56-11cbfec6a9a6",
             "Value": {
                 "id": "81546763-4455-4126-97b2-b1304e2d98f0",
@@ -3475,6 +3539,14 @@
             "Value": {
                 "id": "6a72c8ed-70b1-4c8c-9f6c-1636dd39c0fc",
                 "resourcePath": "objects\\Arbalist_Ability_Bolt_Stuck_Obj\\Arbalist_Ability_Bolt_Stuck_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "da33c714-f469-4f67-bf7a-e280b84030e8",
+            "Value": {
+                "id": "130f1f63-ebed-40c1-84fa-efd08ceab2bb",
+                "resourcePath": "objects\\Reaper_Attack_Stop_Obj\\Reaper_Attack_Stop_Obj.yy",
                 "resourceType": "GMObject"
             }
         },

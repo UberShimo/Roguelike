@@ -1,9 +1,11 @@
 /// @description ACTION!
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Shaman_Attack_Out_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.direction = direction;
 	att.speed = 3;
+	
+	FO = 1; // Never forget
 }
 else if(action == "ability"){
 	
@@ -14,7 +16,7 @@ else if(action == "ability"){
 	// Complex step checking ability excecution
 	loops = 32;
 	while(loops > 0){
-		if(x > mouse_x-2 && x < mouse_x+2) && (y > mouse_y-2 && y < mouse_y+2){
+		if(x > mouse_x-4 && x < mouse_x+4) && (y > mouse_y-4 && y < mouse_y+4){
 			break;
 		}
 		loops -= 1;
@@ -28,6 +30,8 @@ else if(action == "ability"){
 		y -= yDistance;
 	}
 	
+	// Effects
+	instance_create_depth(x, y, depth, CD_Effect);
 	repeat(12){
 		eff = instance_create_depth(x, y, depth, Spark_Pixel_Obj);
 		scaling = random_range(1, 4);
@@ -35,6 +39,6 @@ else if(action == "ability"){
 		eff.image_xscale = scaling;
 		eff.image_yscale = scaling;
 	}
+	// Hitbox
+	instance_create_depth(x, y, 0, Shaman_Ability_Hitbox_Obj);
 }
-
-FO = 1; // Never forget

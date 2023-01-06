@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 10;
+DMG = 20;
 stun = 120;
 
 image_angle = 0;

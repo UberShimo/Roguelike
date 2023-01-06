@@ -13,8 +13,12 @@ if(controllable){
 			rotation = 1;
 		}
 		alarm[3] = 8 * AS;
-		alarm[0] = 12 * AS;
-		alarm[11] = 12 * AS;
+		alarm[0] = 15 * AS;
+		alarm[11] = 15 * AS;
+		// For safety so alarm 3 cant go to 0
+		if(alarm[3] < 1){
+			alarm[3] = 1;
+		}
 	}
 
 	// Ability
@@ -30,7 +34,7 @@ if(controllable){
 	
 	// Dodging
 	if(MS > originalMS){
-		MS -= 4;
+		MS -= 3;
 		instance_create_depth(x, y, depth, Duelist_Dodge_Effect);
 	}
 	else{

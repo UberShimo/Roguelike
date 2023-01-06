@@ -1,6 +1,5 @@
 if(HP < maxHP){
-	HP += 2;
-	if(decayAmount > originalDecayAmount){
-		decayAmount -= originalDecayAmount;
-	}
+	HP += 1;
+	
+	decayAmount = originalDecayAmount;
 }

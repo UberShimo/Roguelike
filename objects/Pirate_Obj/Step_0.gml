@@ -7,8 +7,8 @@ if(controllable){
 		canJump = false;
 		rotation = 2;
 	
-		alarm[3] = 10 * AS;
-		alarm[0] = 40 * AS;
+		alarm[3] = 20 * AS;
+		alarm[0] = 60 * AS;
 		alarm[11] = 40 * AS;
 	}
 

@@ -11,5 +11,6 @@ if(instance_exists(target)){
 	y = target.y;
 }
 else{
+	audio_stop_sound(Rumble_Snd);
 	instance_destroy();
 }

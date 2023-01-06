@@ -1,6 +1,5 @@
-alarm[0] = 30;
+alarm[0] = 20;
 image_alpha = 0.25;
 
-grow = 0.02;
 storedSpeed = 0;
 storedDMG = 0;

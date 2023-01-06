@@ -20,7 +20,7 @@ if(maxFO > 1){
 }
 
 // Draw monsters slain
-xPos = camera_get_view_width(view_camera[0])-sprite_get_width(MonstersSlain_Preview_Spr)*pixelMultiplier;
+xPos = camera_get_view_width(view_camera[0])-sprite_get_width(MonstersSlain_Preview_Spr)*pixelMultiplier*1.5;
 draw_sprite_ext(MonstersSlain_Preview_Spr, 0, xPos, 0, pixelMultiplier, pixelMultiplier, 0, c_white, 0.5);
 c = c_white;
 draw_text_transformed_color(xPos+8, 2, global.monstersSlain, 2, 2, 0, c, c, c, c, 0.5);

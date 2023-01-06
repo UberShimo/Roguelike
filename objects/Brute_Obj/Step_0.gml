@@ -7,8 +7,8 @@ if(controllable){
 		canJump = false;
 		characterShake = 2;
 	
-		alarm[3] = 10 * AS;
-		alarm[0] = 30 * AS;
+		alarm[3] = 15 * AS;
+		alarm[0] = 45 * AS;
 		alarm[11] = 30 * AS;
 	}
 

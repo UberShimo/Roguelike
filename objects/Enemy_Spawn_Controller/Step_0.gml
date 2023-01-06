@@ -4,10 +4,10 @@ spawnCounter -= global.difficultyScaling;
 if(spawnCounter <= 0 && BlackScreen_Controller.nextRoom != Class_Select){
 	rng = irandom_range(1, 3);
 	cam = view_camera[0];
-	minX = camera_get_view_x(cam);
-	maxX = minX + camera_get_view_width(cam);
-	minY = camera_get_view_y(cam);
-	maxY = minY + camera_get_view_height(cam);
+	minX = Dungeon_Creater.startX+128;
+	maxX = minX + Dungeon_Creater.xGrid * Dungeon_Creater.hTiles - 128;
+	minY = Dungeon_Creater.startY+128;
+	maxY = minY + Dungeon_Creater.yGrid * Dungeon_Creater.vTiles - 128;
 	
 	// Spawn big
 	if(rng == 1){

@@ -12,9 +12,9 @@ if(controllable){
 		else{
 			rotation = 2;
 		}
-		alarm[3] = 20 * AS;
-		alarm[0] = 40 * AS;
-		alarm[11] = 40 * AS;
+		alarm[3] = 15 * AS;
+		alarm[0] = 30 * AS;
+		alarm[11] = 30 * AS;
 	}
 
 	// Keep
@@ -52,12 +52,13 @@ if(controllable){
 	}
 
 	// LANDPAM!
-	if(height > 2 && !landPAM){
+	if(height > 3 && !landPAM){
 		landPAM = true;
 	}
 	else if(height < 2 && landPAM){
-		att = instance_create_depth(x, y, 0, Heavyweight_Land_Obj);
-		att.DMG += att.DMG*FO;
 		landPAM = false;
+		att = instance_create_depth(x, y, depth, Heavyweight_Land_Obj);
+		att.DMG *= FO;
+		alarm[4] = 1;
 	}
 }

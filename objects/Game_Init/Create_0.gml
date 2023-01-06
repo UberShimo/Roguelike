@@ -1,5 +1,6 @@
 global.pickedClass = noone;
 global.classUnlocked = false;
+global.level = 1;
 
 global.storedHP = 0;
 global.storedDEF = 0;
@@ -22,14 +23,9 @@ randomize();
 display_set_gui_size(480, 270);
 
 #region load save
-if(!file_exists("save.ini")){ // If you start the game first time
-	ini_open("save.ini");
-	ini_write_real("save", "volume", 0.2);
-}
-else{ // If you have a save
-	ini_open("save.ini");
-	volume = ini_read_real("save", "volume", 0.2);
-}
+ini_open("save.ini");
+volume = ini_read_real("save", "volume", 0.2);
+
 #region Load all class levels
 global.slayerLevel = ini_read_real("save", "slayerLevel", 1);
 global.rogueLevel = ini_read_real("save", "rogueLevel", 1);

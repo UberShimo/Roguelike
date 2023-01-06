@@ -22,6 +22,8 @@ maxHP = HP;
 
 // Singing time
 if(global.pickedClass == Bard_Obj){
+	x = Player_Parent.x;
+	y = Player_Parent.y+64;
 	alarm[0] = 0;
 	alarm[2] = 0;
 	alarm[4] = 60;

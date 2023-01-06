@@ -1,9 +1,10 @@
 image_speed = 0;
 
 // Stats
-HP = 100; // Health Points
+HP = 50; // Health Points
+// Dont ever forget
 maxHP = HP;
-DMG = 6; // Attack Damage
+DMG = 10; // Attack Damage
 AS = 1; // Attack speed
 MS = 1; // Movement Speed
 originalMS = MS; // So MS can reset
@@ -11,22 +12,24 @@ originalMS = MS; // So MS can reset
 rotation = 0; // Used to twist the character
 stunned = false;
 transparency = 1;
-decayAmount = 0.1;
+decayAmount = 0.2;
 originalDecayAmount = decayAmount;
-
-// Dont ever forget
-maxHP = HP;
 
 alarm[0] = 30;
 alarm[1] = 2;
 
-// Get outa wall
-dir = point_direction(x, y, Player_Parent.x, Player_Parent.y);
+// Get outa wall/zombie
+dir = Player_Parent.direction;
 
-while(place_meeting(x, y, Collision_Obj)){
-	x += lengthdir_x(4, dir);
-	y += lengthdir_y(4, dir);
+// Safety size
+image_xscale = 1.5;
+image_yscale = 1.5;
+while(place_meeting(x, y, Collision_Obj) || place_meeting(x, y, Zombie_Obj)){
+	x += lengthdir_x(8, dir);
+	y += lengthdir_y(8, dir);
 }
+image_xscale = 1;
+image_yscale = 1;
 
 // Spawn effect
 repeat(12){
@@ -42,4 +45,4 @@ repeat(12){
 	eff.friction = 0.1;
 }
 
-audio_play_sound(Mystic_Snd, 0, false);
+audio_play_sound(Zombie_Snd, 0, false);

@@ -11,7 +11,8 @@ originalMS = MS; // So MS can reset
 
 rotation = 0; // Used to twist the character
 action = noone; // What are you doing?
-stunned = false;
+stunned = false; // Only effects movement
+dazzled = false; // Actually more like a stun
 transparency = 1;
 pushDirection = 0;
 xPush = 0;

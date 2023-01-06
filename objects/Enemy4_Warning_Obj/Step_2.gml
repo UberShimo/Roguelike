@@ -3,3 +3,6 @@
 if(!instance_exists(spawner)){
 	instance_destroy();
 }
+else if(spawner.dazzled){
+	instance_destroy();
+}

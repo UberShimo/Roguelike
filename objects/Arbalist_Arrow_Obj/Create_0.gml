@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 6;
-stun = 6;
+DMG = 8;
+stun = 4;
 
 audio_play_sound(Swing3_Snd, 0, false);

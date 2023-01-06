@@ -10,7 +10,7 @@ if(action == "attack"){
 	
 	if(rng == 1){
 		att = instance_create_depth(x, y, 0, Tone1_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = direction;
 		att.velocity = 2;
 		audio_play_sound(Tone1_Snd, 1, false);
@@ -20,7 +20,7 @@ if(action == "attack"){
 		
 		repeat(8){
 			att = instance_create_depth(x, y, 0, Tone2_Obj);
-			att.DMG += att.DMG*FO;
+			att.DMG *= FO;
 			att.direction = dir;
 			att.velocity = 2;
 			dir += 45;
@@ -32,7 +32,7 @@ if(action == "attack"){
 		
 		repeat(3){
 			att = instance_create_depth(x, y, 0, Tone3_Obj);
-			att.DMG += att.DMG*FO;
+			att.DMG *= FO;
 			att.direction = dir;
 			att.velocity = 4;
 			att2 = instance_create_depth(x, y, 0, Tone3_Obj);
@@ -47,7 +47,7 @@ if(action == "attack"){
 	else if(rng == 4){
 		repeat(3){
 			att = instance_create_depth(x, y, 0, Tone4_Obj);
-			att.DMG += att.DMG*FO;
+			att.DMG *= FO;
 			att.direction = direction+random_range(-40, 40);
 			att.velocity = random_range(2, 4);
 		}
@@ -58,7 +58,7 @@ if(action == "attack"){
 		
 		repeat(5){
 			att = instance_create_depth(x, y, 0, Tone5_Obj);
-			att.DMG += att.DMG*FO;
+			att.DMG *= FO;
 			att.direction = direction;
 			att.alarm[0] += alarmBonus;
 			alarmBonus += 12;
@@ -69,7 +69,7 @@ if(action == "attack"){
 
 if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Tone1_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.direction = direction;
 	att.velocity = 2;
 	
@@ -77,7 +77,7 @@ if(action == "ability"){
 		
 	repeat(8){
 		att = instance_create_depth(x, y, 0, Tone2_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = dir;
 		att.velocity = 2;
 		dir += 45;
@@ -87,7 +87,7 @@ if(action == "ability"){
 		
 	repeat(3){
 		att = instance_create_depth(x, y, 0, Tone3_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = dir;
 		att.velocity = 4;
 		att2 = instance_create_depth(x, y, 0, Tone3_Obj);
@@ -100,7 +100,7 @@ if(action == "ability"){
 	
 	repeat(3){
 		att = instance_create_depth(x, y, 0, Tone4_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = direction+random_range(-40, 40);
 		att.velocity = random_range(2, 4);
 	}
@@ -108,7 +108,7 @@ if(action == "ability"){
 		
 	repeat(5){
 		att = instance_create_depth(x, y, 0, Tone5_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = direction;
 		att.alarm[0] += alarmBonus;
 		alarmBonus += 12;

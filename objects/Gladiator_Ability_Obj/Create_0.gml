@@ -1,8 +1,9 @@
 event_inherited();
 
-DMG = 12;
-stun = 120;
+DMG = 24;
+stun = 60;
 pushback = 6;
+isDirectionalPushback = true;
 
 image_xscale = 1.5;
 image_yscale = 1.5;

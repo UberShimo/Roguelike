@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 10;
+DMG = 16;
 
 explosionsLeft = 0;
 

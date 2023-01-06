@@ -5,16 +5,6 @@
     "name": "Shaman_Attack_Return_Obj",
     "eventList": [
         {
-            "id": "a569242e-04ee-42b0-8c16-08426ea3709e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "06efb621-b544-4ec4-ac97-3f26a0949006"
-        },
-        {
             "id": "11344832-975c-4b8b-ac94-4cc46f4bf166",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -30,6 +20,16 @@
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "69e53cd5-dc63-49bc-b5c6-e98225ea97aa",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "06efb621-b544-4ec4-ac97-3f26a0949006"
+        },
+        {
+            "id": "78db4bc9-7b06-4553-a122-b3e03f385596",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "3ee16ac7-7423-44ee-b24d-1c4d12c12aa6",
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "06efb621-b544-4ec4-ac97-3f26a0949006"

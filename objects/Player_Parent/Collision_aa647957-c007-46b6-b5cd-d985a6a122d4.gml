@@ -11,7 +11,7 @@ if(controllable && !dodging && (!other.projectile || height < 2)){
 	audio_play_sound(Hurt_Snd, 0, false);
 	
 	// Die
-	if(HP < 1 && controllable){
+	if(HP < 1){
 		// Much blood
 		repeat(12){
 			blood = instance_create_depth(x, y, 0, Blood_Obj);
@@ -19,7 +19,10 @@ if(controllable && !dodging && (!other.projectile || height < 2)){
 			s = blood.image_xscale * random_range(1, 4);
 			blood.image_xscale = s;
 			blood.image_yscale = s;
-			instance_create_depth(x, y, 0, Hit_Eff_Obj);
+			splat = instance_create_depth(x, y, 0, Hit_Eff_Obj);
+			splat.fade = 0;
+			splat.image_alpha = 0.5;
+			splat.image_xscale *= random_range(1, 3);
 		}
 		HP = 0;
 		controllable = false;

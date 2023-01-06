@@ -16,3 +16,11 @@ x = Player_Parent.x + lengthdir_x(48, rotation);
 y = Player_Parent.y + lengthdir_y(48, rotation);
 
 rotation += rotateAmount;
+
+if(Player_Parent.height > 3 && changeRotationReady){
+	changeRotationReady = false;
+	rotateAmount = -rotateAmount;
+}
+else if(Player_Parent.height < 2){
+	changeRotationReady = true;
+}

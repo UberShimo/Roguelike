@@ -1,10 +1,7 @@
 event_inherited();
 
-DMG = 10;
+DMG = 20;
 
-image_xscale = 0.75;
-image_yscale = 0.75;
-
-alarm[0] = 30;
+alarm[0] = 40;
 
 audio_play_sound(Mystic_Snd, 0, false);

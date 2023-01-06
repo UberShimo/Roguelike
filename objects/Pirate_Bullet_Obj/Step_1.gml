@@ -8,6 +8,8 @@ repeat(velocity){
 	effScaling += 1;
 		
 	if(position_meeting(x, y, Collision_Obj) || place_meeting(x, y, Enemy_Parent_Obj)){
+		x += lengthdir_x(1, direction);
+		y += lengthdir_y(1, direction);
 		repeat(8){
 			instance_create_depth(x, y, depth, Spark_Pixel_Obj);
 		}

@@ -13,21 +13,25 @@ if(controllable){
 		}
 		alarm[3] = 8 * AS;
 		alarm[0] = 24 * AS;
-		alarm[11] = 24 * AS;
+		alarm[11] = 16 * AS;
+		// For safety so alarm 3 cant go to 0
+		if(alarm[3] < 1){
+			alarm[3] = 1;
+		}
 	}
 
 	// Ability
 	if(mouse_check_button_pressed(mb_right) && abilityReady && height < 2){
 		abilityReady = false;
 		dodging = true;
-		MS = 16;
+		MS = 12;
 	
 		alarm[1] = CD*CDchanger;
 	}
 	
 	// Dodging
 	if(MS > originalMS){
-		MS -= 2;
+		MS -= 1;
 		instance_create_depth(x, y, depth, Rogue_Dodge_Effect);
 	}
 	else{

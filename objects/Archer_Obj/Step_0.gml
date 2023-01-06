@@ -5,7 +5,7 @@ if(controllable){
 	if(mouse_check_button(mb_left) && action == noone && height < 2){
 		action = "attack";
 	
-		alarm[3] = 2 * AS;
+		alarm[3] = 2;
 		alarm[0] = 60 * AS;
 	}
 
@@ -16,7 +16,7 @@ if(controllable){
 	
 		alarm[3] = 2;
 		alarm[1] = CD*CDchanger;
-		alarm[0] = 4;
+		alarm[0] = 20;
 	}
 
 	// Tripple arrow mechanic

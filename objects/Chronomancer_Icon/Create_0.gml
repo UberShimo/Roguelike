@@ -8,4 +8,4 @@ className = "Chronomancer";
 portrait = Chronomancer_Portrait_Spr;
 attackDescription = "Spay orbs";
 abilityDescription = "Create an implosion";
-bonusDescription = "2 orbs that rotate around you.\nThey destroy projectiles\nand holds enemies in place.";
+bonusDescription = "Your orbs destroy projectiles\nand holds enemies in place.\nJump to change their rotation.";

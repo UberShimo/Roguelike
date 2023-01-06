@@ -7,5 +7,5 @@ className = "Bard";
 
 portrait = Bard_Portrait_Spr;
 attackDescription = "Play one outa 5 tunes";
-abilityDescription = "Play all 5 tunes";
+abilityDescription = "Play a chord!";
 bonusDescription = "This guy is art.";

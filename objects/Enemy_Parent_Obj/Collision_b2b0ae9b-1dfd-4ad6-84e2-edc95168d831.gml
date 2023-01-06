@@ -9,8 +9,8 @@ if(ds_list_find_index(hitboxList, other) == -1){
 		stunned = true;
 	}
 		
-	// No dmg or stun no blood
-	if(other.DMG > 0 && other.stun > 0){
+	// No actual hit no effects
+	if(other.isAnActualHit){
 		// Spawn dramatic effects
 		repeat(6){
 			instance_create_depth(x, y, 0, Blood_Obj);
@@ -20,14 +20,22 @@ if(ds_list_find_index(hitboxList, other) == -1){
 	}
 	
 	// Pushback
-	if(other.isDirectionalPushback){
-		pushDirection = other.direction;
+	if(other.pushback > 0){
+		dazzled = true;
+		shake = 1;
+		alarm[0] = other.stun;
+		alarm[2] = other.stun;
+		alarm[3] = 0;
+		
+		if(other.isDirectionalPushback){
+			pushDirection = other.direction;
+		}
+		else{
+			pushDirection = point_direction(other.x, other.y, x, y);
+		}
+		xPush = lengthdir_x(other.pushback, pushDirection);
+		yPush = lengthdir_y(other.pushback, pushDirection);
 	}
-	else{
-		pushDirection = point_direction(other.x, other.y, x, y);
-	}
-	xPush = lengthdir_x(other.pushback, pushDirection);
-	yPush = lengthdir_y(other.pushback, pushDirection);
 	
 	if(HP <= 0){
 		MonsterDies(self);

@@ -1,7 +1,7 @@
 monster = argument0; /// @param Object
 
 // Samurai specific stuff
-if(instance_exists(Samurai_Obj)){
+if(instance_exists(Samurai_Obj) && Player_Parent.alarm[1] > 0){
 	Samurai_Obj.alarm[1] -= 60;
 			
 	if(Samurai_Obj.alarm[1] < 0){
@@ -27,99 +27,99 @@ if(monster.object_index == Summoner_Obj){
 	BlackScreen_Controller.nextRoom = Class_Select;
 	
 	// What class?
-	if(global.pickedClass == Slayer_Obj){
+	if(global.pickedClass == Slayer_Obj && global.level == global.slayerLevel){
 		global.slayerLevel += 1;
 		if(global.gladiatorLevel == 0){ // Unlock class
 			global.gladiatorLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Rogue_Obj){
+	else if(global.pickedClass == Rogue_Obj && global.level == global.rogueLevel){
 		global.rogueLevel += 1;
 		if(global.samuraiLevel == 0){ // Unlock class
 			global.samuraiLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Archer_Obj){
+	else if(global.pickedClass == Archer_Obj && global.level == global.archerLevel){
 		global.archerLevel += 1;
 		if(global.arbalistLevel == 0){ // Unlock class
 			global.arbalistLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Wizard_Obj){
+	else if(global.pickedClass == Wizard_Obj && global.level == global.wizardLevel){
 		global.wizardLevel += 1;
 		if(global.shamanLevel == 0){ // Unlock class
 			global.shamanLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Gladiator_Obj){
+	else if(global.pickedClass == Gladiator_Obj && global.level == global.gladiatorLevel){
 		global.gladiatorLevel += 1;
 		if(global.paladinLevel == 0){ // Unlock class
 			global.paladinLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Samurai_Obj){
+	else if(global.pickedClass == Samurai_Obj && global.level == global.samuraiLevel){
 		global.samuraiLevel += 1;
 		if(global.duelistLevel == 0){ // Unlock class
 			global.duelistLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Arbalist_Obj){
+	else if(global.pickedClass == Arbalist_Obj && global.level == global.arbalistLevel){
 		global.arbalistLevel += 1;
 		if(global.toolistLevel == 0){ // Unlock class
 			global.toolistLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Shaman_Obj){
+	else if(global.pickedClass == Shaman_Obj && global.level == global.shamanLevel){
 		global.shamanLevel += 1;
 		if(global.necromancerLevel == 0){ // Unlock class
 			global.necromancerLevel = 1;
 			global.classUnlocked = true;
 		}
 	}
-	else if(global.pickedClass == Paladin_Obj){
+	else if(global.pickedClass == Paladin_Obj && global.level == global.paladinLevel){
 		global.paladinLevel += 1;
 	}
-	else if(global.pickedClass == Duelist_Obj){
+	else if(global.pickedClass == Duelist_Obj && global.level == global.duelistLevel){
 		global.duelistLevel += 1;
 	}
-	else if(global.pickedClass == Toolist_Obj){
+	else if(global.pickedClass == Toolist_Obj && global.level == global.toolistLevel){
 		global.toolistLevel += 1;
 	}
-	else if(global.pickedClass == Necromancer_Obj){
+	else if(global.pickedClass == Necromancer_Obj && global.level == global.necromancerLevel){
 		global.necromancerLevel += 1;
 	}
-	else if(global.pickedClass == Heavyweight_Obj){
+	else if(global.pickedClass == Heavyweight_Obj && global.level == global.heavyweightLevel){
 		global.heavyweightLevel += 1;
 	}
-	else if(global.pickedClass == Reaper_Obj){
+	else if(global.pickedClass == Reaper_Obj && global.level == global.reaperLevel){
 		global.reaperLevel += 1;
 	}
-	else if(global.pickedClass == Ninja_Obj){
+	else if(global.pickedClass == Ninja_Obj && global.level == global.ninjaLevel){
 		global.ninjaLevel += 1;
 	}
-	else if(global.pickedClass == Chronomancer_Obj){
+	else if(global.pickedClass == Chronomancer_Obj && global.level == global.chronomancerLevel){
 		global.chronomancerLevel += 1;
 	}
-	else if(global.pickedClass == Brute_Obj){
+	else if(global.pickedClass == Brute_Obj && global.level == global.bruteLevel){
 		global.bruteLevel += 1;
 	}
-	else if(global.pickedClass == Pirate_Obj){
+	else if(global.pickedClass == Pirate_Obj && global.level == global.pirateLevel){
 		global.pirateLevel += 1;
 	}
-	else if(global.pickedClass == Mechanic_Obj){
+	else if(global.pickedClass == Mechanic_Obj && global.level == global.mechanicLevel){
 		global.mechanicLevel += 1;
 	}
-	else if(global.pickedClass == Bard_Obj){
+	else if(global.pickedClass == Bard_Obj && global.level == global.bardLevel){
 		global.bardLevel += 1;
 	}
-	else if(global.pickedClass == DebugMan_Obj){
+	else if(global.pickedClass == DebugMan_Obj && global.level == global.debugManLevel){
 		global.debugManLevel += 1;
 	}
 	
@@ -136,7 +136,7 @@ if(monster.object_index == Summoner_Obj){
 	}
 	
 	// Unlock DebugMan
-	if(CheckIfAllClassesAreFinished()){
+	if(CheckIfAllClassesAreFinished() && global.debugManLevel == 0){
 		global.debugManLevel = 1;
 		global.classUnlocked = true;
 	}

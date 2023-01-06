@@ -85,5 +85,5 @@ depth = -y;
 
 // Focus mechanic
 if(action == noone && FO < maxFO){
-	FO += (maxFO-1) / 180; // Charges in 3 sec
+	FO += (maxFO-1) / 120; // Charges in 2 sec
 }

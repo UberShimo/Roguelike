@@ -1,6 +1,7 @@
 event_inherited();
 
-DMG = 20;
+DMG = 40;
+stun = 30;
 
 effScaling = 0;
 

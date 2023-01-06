@@ -2,15 +2,15 @@
 
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Chronomancer_Attack_Obj);
-	att.DMG += att.DMG*FO;
-	att.direction = direction + random_range(-8, 8);
+	att.DMG *= FO;
+	att.direction = direction + random_range(-12, 12);
 	att.velocity = random_range(1.5, 2.5);
 	att.friction = 0.1;
 }
 
 if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Chronomancer_Ability_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.image_angle = direction;
 	
 	xDistance = lengthdir_x(4, direction);

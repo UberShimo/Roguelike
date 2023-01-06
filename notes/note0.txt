@@ -1,7 +1,6 @@
 TODO{
-	Fix icon and splash art n shit
 	Test and balance
-	REMOVE DEPTH 3 SHORTCUT!
+	Fix icon and splash art n shit
 }
 
 Title: "Evil summoner dungeon"

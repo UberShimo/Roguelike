@@ -1,4 +1,5 @@
 DMG = 2;
 
-alarm[0] = 8;
+friction = 0.1;
+alarm[0] = 10;
 alarm[1] = 180;

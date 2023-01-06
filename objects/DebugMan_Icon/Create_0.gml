@@ -6,7 +6,7 @@ if(global.debugManLevel == 0){
 
 sprite = DebugMan_Spr;
 classObject = DebugMan_Obj;
-level = 1;
+level = global.debugManLevel;
 className = "Debug Man";
 
 portrait = Portrait_Spr;

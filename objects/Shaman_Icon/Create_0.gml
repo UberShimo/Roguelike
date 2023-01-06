@@ -6,6 +6,6 @@ level = global.shamanLevel;
 className = "Shaman";
 
 portrait = Shaman_Portrait_Spr;
-attackDescription = "Shoot a orb that stops and\ngrows then comes back";
-abilityDescription = "Teleport";
-bonusDescription = "Happy shaman!";
+attackDescription = "Shoot an orb that returns\nafter short while";
+abilityDescription = "Teleport in a blast";
+bonusDescription = "Teleport blast push away\nenemies and orbs.";

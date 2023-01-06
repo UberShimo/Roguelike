@@ -12,7 +12,7 @@ else if(irandom_range(1, 2) == 1){ // 50% chance of Attacking
 		ySpawn = Player_Parent.y + random_range(-64, 64);
 	
 		warning = instance_create_depth(xSpawn, ySpawn, -ySpawn, Enemy4_Warning_Obj);
-		scale = image_xscale * random_range(0.5, 1); // Bullets scale with size
+		scale = image_xscale * random_range(0.4, 0.8); // Bullets scale with size
 		warning.image_xscale = scale;
 		warning.image_yscale = scale;
 		warning.DMG = DMG;

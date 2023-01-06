@@ -2,14 +2,6 @@
 // calculate velocity
 velocity = sqrt(power(xPush, 2) + power(yPush, 2));
 
-if(velocity > frictionAmount){
-	x += xPush;
-	y += yPush;
-
-	xPush -= lengthdir_x(frictionAmount, pushDirection);
-	yPush -= lengthdir_y(frictionAmount, pushDirection);
-}
-
 // Bounce logic when colliding
 if(place_meeting(x+xPush, y+yPush, Collision_Obj)){
 	// Get hurt
@@ -45,4 +37,12 @@ if(place_meeting(x+xPush, y+yPush, Collision_Obj)){
 		yPush = -yPush/2;
 	}
 	pushDirection = point_direction(x, y, x+xPush, y+yPush);
+}
+// Pushback movement
+if(velocity > frictionAmount){
+	x += xPush;
+	y += yPush;
+
+	xPush -= lengthdir_x(frictionAmount, pushDirection);
+	yPush -= lengthdir_y(frictionAmount, pushDirection);
 }

@@ -1,7 +1,7 @@
 event_inherited();
 
-DMG = 6;
-stun = 4;
+DMG = 10;
+stun = 3;
 
 image_xscale = 1.2;
 image_yscale = 0.8;

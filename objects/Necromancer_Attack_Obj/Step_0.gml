@@ -1,4 +1,4 @@
-repeat(3){
+repeat(2){
 	eff = instance_create_depth(x, y, depth, Fading_Pixel_Obj);
 	eff.image_blend = c_green;
 	eff.fade = 0.02;
@@ -11,3 +11,6 @@ repeat(3){
 	eff.image_xscale += scale;
 	eff.image_yscale += scale;
 }
+
+hspeed += random_range(-0.5, 0.5);
+vspeed += random_range(-0.5, 0.5);

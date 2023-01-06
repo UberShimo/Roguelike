@@ -6,9 +6,9 @@ if(controllable){
 		action = "attack";
 		canJump = false;
 	
-		alarm[3] = 8 * AS;
+		alarm[3] = 10 * AS;
 		alarm[0] = 60 * AS;
-		alarm[11] = 8 * AS;
+		alarm[11] = 20 * AS;
 	
 		rotation = -2;
 	}

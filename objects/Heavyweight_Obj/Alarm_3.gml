@@ -1,7 +1,7 @@
 /// @description ACTION!
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Heavyweight_Attack_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.direction = direction;
 	reposition = random_range(-8, 8);
 	att.x += lengthdir_x(reposition, direction+90);
@@ -11,7 +11,7 @@ if(action == "attack"){
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Heavyweight_Rolling_Hitbox_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 }
 
 FO = 1; // Never forget

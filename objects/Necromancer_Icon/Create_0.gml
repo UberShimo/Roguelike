@@ -8,4 +8,4 @@ className = "Necromancer";
 portrait = Necromancer_Portrait_Spr;
 attackDescription = "Spawn a swarm";
 abilityDescription = "Spawn a zombie that decays";
-bonusDescription = "Your swarm heal your Zombies.\nAlso zombies has chance\nto drop health.";
+bonusDescription = "Your swarm heal your Zombies.";

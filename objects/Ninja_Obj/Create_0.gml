@@ -1,5 +1,5 @@
 event_inherited();
 
-CD = 4*60;
+CD = 5*60;
 
 characterSprite = Ninja_Spr;

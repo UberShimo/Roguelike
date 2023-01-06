@@ -11,8 +11,9 @@ if(controllable){
 	if(mouse_check_button_released(mb_left) && action == "aim"){
 		action = "attack";
 	
-		alarm[3] = 2 * AS;
-		alarm[0] = 30 * AS;
+		alarm[3] = 2;
+		alarm[0] = 60 * AS;
+		alarm[11] = 30 * AS;
 	}
 
 	// Ability
@@ -32,8 +33,8 @@ if(controllable){
 			FO += maxFO / 180; // Charges in 3 sec
 		}
 		// Aquiring target
-		if(aim > 1){
-			aim -= 0.5;
+		if(aim > 0.5){
+			aim -= 0.25;
 		}
 	}
 }

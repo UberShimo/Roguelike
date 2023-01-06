@@ -2,12 +2,13 @@
 
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Gladiator_Attack_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	rotation = 1;
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Gladiator_Ability_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
+	att.direction = direction;
 	rotation = 2;
 }
 

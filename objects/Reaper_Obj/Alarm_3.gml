@@ -1,17 +1,21 @@
 /// @description ACTION!
 if(action == "attack"){
 	att = instance_create_depth(x, y, 0, Reaper_Attack_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
+	att2 = instance_create_depth(x, y, 0, Reaper_Attack_Tip_Obj);
+	att2.DMG *= FO;
 	spin = 1;
-	MS = 0;
+	MS = originalMS;
 	dodging = false;
 	transparency = 1;
+	xSpeed = 0;
+	ySpeed = 0;
 	
-	alarm[5] = 8*AS;
+	alarm[5] = 12*AS;
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Reaper_Ability_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.image_angle = direction;
 	
 	xDistance = lengthdir_x(4, direction);

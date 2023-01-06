@@ -1,4 +1,4 @@
-if(HP > 0){
+if(HP >= 1){
 	// Draws shadow
 	draw_self();
 

@@ -6,6 +6,6 @@ level = global.bruteLevel;
 className = "Brute";
 
 portrait = Brute_Portrait_Spr;
-attackDescription = "Punch forward and behind";
+attackDescription = "Finger thrust forward and\nextra hard behind";
 abilityDescription = "SUPER PUNCH!!!";
-bonusDescription = "Start with 50% more health and\nhe is fucking naked...";
+bonusDescription = "Start with 50% more health\nand he is fucking naked...";

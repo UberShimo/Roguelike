@@ -1,11 +1,10 @@
 eff = instance_create_depth(x, y, depth, Toolist_Attack_Effect);
 eff.image_angle = image_angle;
-eff.image_alpha = 0.2;
 
 image_angle += rotationSpeed;
 rotationSpeed += 1;
 
-velocity += 0.25;
+velocity += 0.2;
 
 // The real attack dmg comes here
 DMG = initialDMG * velocity * 2;

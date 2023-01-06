@@ -4,3 +4,4 @@ DMG = 1;
 stun = 8;
 pushback = 0;
 isDirectionalPushback = false;
+isAnActualHit = true;

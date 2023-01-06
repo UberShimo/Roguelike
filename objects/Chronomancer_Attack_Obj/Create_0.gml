@@ -1,7 +1,7 @@
 event_inherited();
 
-DMG = 2;
-stun = 1;
+DMG = 5;
+stun = 2;
 
 scale = random_range(0.2, 0.3);
 image_xscale = scale;

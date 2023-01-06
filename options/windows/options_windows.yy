@@ -8,7 +8,7 @@
     "option_windows_company_info": "YoYo Games Ltd",
     "option_windows_copy_exe_to_dest": false,
     "option_windows_copyright_info": "(c) Simon Dahlén Sjöstedt",
-    "option_windows_description_info": "A short action roguelike",
+    "option_windows_description_info": "A dungeon crawler action roguelike",
     "option_windows_display_cursor": false,
     "option_windows_display_name": "Evil Summoner Dungeon",
     "option_windows_enable_steam": false,

@@ -1,3 +1,3 @@
-if(Start_Obj.level > 1){
-	Start_Obj.level -= 1;
+if(global.level > 1){
+	global.level -= 1;
 }

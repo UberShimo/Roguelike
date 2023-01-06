@@ -8,4 +8,4 @@ className = "Samurai";
 portrait = Samurai_Portrait_Spr;
 attackDescription = "Katana slash";
 abilityDescription = "Samurai dash dealing\ndamage to enemies";
-bonusDescription = "Killing enemies reduce\nsamurai dash cooldown.";
+bonusDescription = "Killing enemies reduce\nability cooldown.";

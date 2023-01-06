@@ -14,9 +14,9 @@ if(controllable){
 		// Fix direction bf4 shooting
 		direction = point_direction(x, y, mouse_x, mouse_y);
 	
-		alarm[3] = 2 * AS;
-		alarm[0] = 80 * AS;
-		alarm[11] = 40 * AS;
+		alarm[3] = 2;
+		alarm[0] = 90 * AS;
+		alarm[11] = 60 * AS;
 	}
 
 	// Ability

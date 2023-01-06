@@ -6,6 +6,6 @@ level = global.reaperLevel;
 className = "Reaper";
 
 portrait = Reaper_Portrait_Spr;
-attackDescription = "Become immaterial then reap";
+attackDescription = "Dash then slash\nEyes glow when attack is ready";
 abilityDescription = "Spawn a scythe that\npulls enemies";
-bonusDescription = "Using ability cleverly can\npush away enemies.";
+bonusDescription = "Tip of attack deal\nextra damage.";

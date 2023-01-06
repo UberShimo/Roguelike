@@ -7,5 +7,5 @@ className = "Heavyweight";
 
 portrait = Heavyweight_Portrait_Spr;
 attackDescription = "Punch that push back";
-abilityDescription = "Long roll means\nmany invincibility frames";
-bonusDescription = "Very heavy...";
+abilityDescription = "Invincible roll!";
+bonusDescription = "Takes less damage but...\nMaybe too heavy armored.\nTry land on someone!";

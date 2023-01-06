@@ -3,18 +3,18 @@
 if(action == "attack"){
 	if(shotsLoaded > 0){
 		att = instance_create_depth(x, y, 0, Arbalist_Arrow_Obj);
-		att.DMG += att.DMG*FO;
+		att.DMG *= FO;
 		att.direction = direction;
 		att.velocity = 16;
 	
-		alarm[3] = 8 * AS;
+		alarm[3] = 10 * AS;
 		shotsLoaded -= 1;
 	}
 }
 
 if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Arbalist_Ability_Bolt_Obj);
-	att.DMG += att.DMG*FO;
+	att.DMG *= FO;
 	att.direction = direction;
 	att.velocity = 32;
 	

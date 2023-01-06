@@ -1,5 +1,6 @@
-DMG = 20;
-stun = 8;
+event_inherited();
+
+stun = 20;
 pushback = 8;
 isDirectionalPushback = true;
 

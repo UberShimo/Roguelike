@@ -2,4 +2,3 @@
 
 MS = originalMS;
 stunned = false;
-shake = 0;
