@@ -9,10 +9,12 @@ image_xscale = xGrid/sprite_width;
 image_yscale = yGrid/sprite_height;
 
 // Amount of tiles to spawn random things on vertically and horizontally
-hTiles = 7;
-vTiles = 7;
+hTiles = 5;
+vTiles = 5;
 
 wallWidth = 32;
+wallHeight = 24;
+
 // Spawn upper wall
 for(i = 0; i < (xGrid/wallWidth) * hTiles + 1; i++){ // The + 1 is because the dungeon has an extra wall in width & height
 	instance_create_depth(x + wallWidth/2 + i*wallWidth, y-12, depth, Wall1_Obj);
@@ -37,36 +39,6 @@ if(global.dungeonDepth < 3){
 // Spawn summoner
 else{
 	instance_create_depth(0, 0, 0, Summoner_Obj);
-}
-
-// Spawn upgrades
-repeat(2){
-	// Random position
-	x = irandom_range(0, hTiles) * xGrid;
-	y = irandom_range(0, vTiles) * yGrid;
-	
-	// Redo random position if place not empty
-	while(!place_empty(x, y)){
-		x = irandom_range(0, hTiles) * xGrid;
-		y = irandom_range(0, vTiles) * yGrid;
-	}
-	
-	rng = irandom_range(1, 4);
-	
-	if(rng == 1){
-		obj = DEF_Upgrade_Obj;
-	}
-	else if(rng == 2){
-		obj = FO_Upgrade_Obj;
-	}
-	else if(rng == 3){
-		obj = AS_Upgrade_Obj;
-	}
-	else{
-		obj = CD_Upgrade_Obj;
-	}
-	// Spawn da upgrade
-	instance_create_depth(x+xGrid/2, y+yGrid/2, depth, obj);
 }
 	
 // Reset position
@@ -144,6 +116,36 @@ repeat(vTiles){
 
 x = startX;
 y = startY;
+
+// Spawn upgrades
+repeat(2){
+	// Random position
+	x = irandom_range(0, hTiles) * xGrid;
+	y = irandom_range(0, vTiles) * yGrid;
+	
+	// Redo random position if meeting stairway
+	while(place_meeting(x, y, StairwayDown_Obj) || place_meeting(x, y, StairwayUp_Obj)){
+		x = irandom_range(0, hTiles) * xGrid;
+		y = irandom_range(0, vTiles) * yGrid;
+	}
+	
+	rng = irandom_range(1, 4);
+	
+	if(rng == 1){
+		obj = DEF_Upgrade_Obj;
+	}
+	else if(rng == 2){
+		obj = FO_Upgrade_Obj;
+	}
+	else if(rng == 3){
+		obj = AS_Upgrade_Obj;
+	}
+	else{
+		obj = CD_Upgrade_Obj;
+	}
+	// Spawn da upgrade
+	instance_create_depth(x+xGrid/2+wallWidth/2, y+yGrid/2+wallHeight/2, depth, obj);
+}
 
 // Start da musik
 if(!audio_is_playing(Dungeon_Mu)){

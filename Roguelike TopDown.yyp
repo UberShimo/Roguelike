@@ -1567,6 +1567,14 @@
             }
         },
         {
+            "Key": "5f2fd8eb-7172-4ef8-8286-b31c9efbdc00",
+            "Value": {
+                "id": "e0ced4c3-4ad7-4e52-a938-05a85ec066f9",
+                "resourcePath": "objects\\Upgrade_Text_Obj\\Upgrade_Text_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5f756268-157f-4a1d-8f6d-51f9f8bce917",
             "Value": {
                 "id": "4c62261c-6790-488b-8d33-8042a5413fc2",

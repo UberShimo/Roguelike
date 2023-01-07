@@ -31,14 +31,16 @@ timer =  string(global.minutes) + ":" + string(global.seconds);
 draw_text_transformed_color(8, yPos, timer, 1, 1, 0, c, c, c, c, 0.5);
 
 // Draw minimap border
-xPos = camera_get_view_width(view_camera[0])-sprite_get_width(Minimap_Spr)*pixelMultiplier;
-yPos = camera_get_view_height(view_camera[0])-sprite_get_height(Minimap_Spr)*pixelMultiplier;
+mapWidth = sprite_get_width(Minimap_Spr);
+mapHeight = sprite_get_height(Minimap_Spr);
+xPos = camera_get_view_width(view_camera[0])-mapWidth*pixelMultiplier;
+yPos = camera_get_view_height(view_camera[0])-mapHeight*pixelMultiplier;
 draw_sprite_ext(Minimap_Spr, 0, xPos, yPos, pixelMultiplier, pixelMultiplier, 0, c_white, 0.2);
 // Draw depth
 draw_sprite_ext(Depth_Preview_Spr, global.dungeonDepth-1, xPos, yPos, pixelMultiplier, pixelMultiplier, 0, c_white, 0.5);
 // Draw player position on minimap
-xPos = xPos + (x-Dungeon_Creater.startX) / Dungeon_Creater.xGrid * (Dungeon_Creater.hTiles+1.1); // Donnu why +1.1 makes good result
-yPos = yPos + (y-Dungeon_Creater.startY) / Dungeon_Creater.yGrid * (Dungeon_Creater.vTiles-1.1); // Donnu why -1.1 makes good result
+xPos = xPos + (x-Dungeon_Creater.startX) / (Dungeon_Creater.xGrid * (Dungeon_Creater.hTiles)) * (mapWidth-3.5) * pixelMultiplier; // Donnu why -3.5 makes good result
+yPos = yPos + (y-Dungeon_Creater.startY) / (Dungeon_Creater.yGrid * (Dungeon_Creater.vTiles)) * (mapHeight-3.5) * pixelMultiplier;
 draw_sprite_ext(Pixel_Spr, 0, xPos, yPos, pixelMultiplier, pixelMultiplier, 0, c_white, 1);
 
 // Draw returning

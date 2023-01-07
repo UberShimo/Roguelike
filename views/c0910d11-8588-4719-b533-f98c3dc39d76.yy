@@ -10,7 +10,8 @@
         "4e8d4583-c44d-498f-b36e-4b630230e692",
         "68a308c7-6ca9-4f32-96a7-3706723d593b",
         "f5637e4d-c6e6-41cf-abef-5436678a171a",
-        "3febd17f-e074-4da5-bdb3-603fdc99d6b6"
+        "3febd17f-e074-4da5-bdb3-603fdc99d6b6",
+        "5f2fd8eb-7172-4ef8-8286-b31c9efbdc00"
     ],
     "filterType": "GMObject",
     "folderName": "Upgrades",

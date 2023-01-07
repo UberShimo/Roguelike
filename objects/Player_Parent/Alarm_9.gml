@@ -1,6 +1,6 @@
 /// @description Timer logic
 
-if(global.seconds < 60){
+if(global.seconds <= 60){
 	global.seconds += 1;
 }
 else{

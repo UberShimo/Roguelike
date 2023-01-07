@@ -11,7 +11,7 @@ if(irandom_range(1, 2) == 1){
 }
 
 action = "scared";
-HP = 200*global.difficultyScaling;
+HP = 300*global.difficultyScaling*global.difficultyScaling;
 destination[2] = [x, y]; // 2 coordinate variable
 alarm[0] = 60;
 alarm[2] = 60;

@@ -3,7 +3,7 @@ friction = 0.2;
 sprite_index = Shadow_Spr;
 depth = -y;
 direction = -90; // Face downwards
-alarm[7] = 2;
+alarm[7] = 60;
 alarm[9] = 60;
 
 // Stats

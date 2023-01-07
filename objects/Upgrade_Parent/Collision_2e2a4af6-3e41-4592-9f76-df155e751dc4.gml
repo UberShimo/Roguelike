@@ -1,4 +1,5 @@
 global.relicsFound += 1;
+depth = -y;
 
 // Unlock da reaper
 if(global.relicsFound == 2 && global.minutes < 1 && global.reaperLevel == 0){
