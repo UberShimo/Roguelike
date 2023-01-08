@@ -16,7 +16,7 @@ event_inherited();
 repeat(3){
 	xRNG = irandom_range(1, 7);
 	yRNG = irandom_range(1, 7);
-	while(xRNG >= 3 && xRNG <= 5 && yRNG >= 3 && yRNG <= 5){
+	while(xRNG == 4 && yRNG == 4){
 		xRNG = irandom_range(1, 7);
 		yRNG = irandom_range(1, 7);
 	}

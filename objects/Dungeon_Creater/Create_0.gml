@@ -124,7 +124,9 @@ repeat(2){
 	y = irandom_range(0, vTiles) * yGrid;
 	
 	// Redo random position if meeting stairway
-	while(place_meeting(x, y, StairwayDown_Obj) || place_meeting(x, y, StairwayUp_Obj)){
+	while(place_meeting(x, y, StairwayDown_Obj)
+	|| place_meeting(x, y, StairwayUp_Obj)
+	|| place_meeting(x, y, Upgrade_Parent)){
 		x = irandom_range(0, hTiles) * xGrid;
 		y = irandom_range(0, vTiles) * yGrid;
 	}

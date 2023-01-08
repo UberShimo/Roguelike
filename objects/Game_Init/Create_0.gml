@@ -7,8 +7,10 @@ global.storedDEF = 0;
 global.storedAS = 0;
 global.storedFO = 0;
 global.storedCD = 0;
-global.relicsFound = 0; // Unlock related
 global.statsAreStored = false;
+
+global.relicsFound = 0; // Unlock related
+global.hasTakenDamage = false; // Unlock related
 
 global.difficultyScaling = 1;
 global.monstersSlain = 0;

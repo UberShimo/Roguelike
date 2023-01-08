@@ -1,12 +1,6 @@
 global.relicsFound += 1;
 depth = -y;
 
-// Unlock da reaper
-if(global.relicsFound == 2 && global.minutes < 1 && global.reaperLevel == 0){
-	global.reaperLevel = 1;
-	global.classUnlocked = true;
-}
-
 // Effects
 instance_create_depth(x, y, depth, CD_Effect);
 repeat(12){

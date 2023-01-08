@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "1c782fd6-6d68-49a9-9548-4a4c6e2b89f0",
+            "Value": {
+                "id": "b50bffdc-32a7-4348-a6ae-89c6f3a7565e",
+                "resourcePath": "objects\\Square_Button_Obj\\Square_Button_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1c7cf285-5674-44bb-a003-c14aceb5f284",
             "Value": {
                 "id": "5bb272fb-89d0-43ed-a71b-9185639776ef",
@@ -628,6 +636,14 @@
                 "id": "6bc475e7-ae55-4683-abbd-e44ccbd10fab",
                 "resourcePath": "objects\\Upgrade_Parent\\Upgrade_Parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "22e1b1e3-636e-4c80-b319-233418db9afa",
+            "Value": {
+                "id": "b2d7d4e7-daa9-4041-abd6-3857feb57130",
+                "resourcePath": "sprites\\Square_Button_Spr\\Square_Button_Spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1791,6 +1807,14 @@
             }
         },
         {
+            "Key": "6ad5e91c-6f9c-453d-ae3e-6a92002a4d5b",
+            "Value": {
+                "id": "a5fe9cbf-2f6c-4860-bed8-065c6949a582",
+                "resourcePath": "sprites\\Save_Spr\\Save_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b298e51-9400-418f-a1c7-87b5e66c4185",
             "Value": {
                 "id": "a65db011-4c44-47cf-b72a-f69dfc91d0df",
@@ -2855,6 +2879,14 @@
             }
         },
         {
+            "Key": "afb3367f-b5ac-445d-9e41-5f77b64bd4e0",
+            "Value": {
+                "id": "32938895-a579-413e-87db-55468ba3d68d",
+                "resourcePath": "objects\\Trash_Bin_Obj\\Trash_Bin_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "afcd6e60-9af7-42e4-bd39-92c1e94455ae",
             "Value": {
                 "id": "a0a08839-6631-4874-9eb2-759825797329",
@@ -3076,6 +3108,14 @@
                 "id": "35916d54-f064-48cb-b63f-457d1d73b277",
                 "resourcePath": "objects\\Player_Attack_Hitbox_Parent\\Player_Attack_Hitbox_Parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bc2e6dcd-be15-4a88-98ce-5b3f1b306ad0",
+            "Value": {
+                "id": "e0ef637c-4c5e-466d-b4fb-85358d23ced8",
+                "resourcePath": "sprites\\Trash_Bin_Spr\\Trash_Bin_Spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3580,6 +3620,14 @@
                 "id": "529dfe23-7819-4090-b914-ba529f8c5d83",
                 "resourcePath": "sprites\\Monster2_ATK_Eff_3_Spr\\Monster2_ATK_Eff_3_Spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dcb9521b-4777-43cd-bae4-b1392f1fe048",
+            "Value": {
+                "id": "9c796a95-1785-45c7-8c3e-220fbc85e375",
+                "resourcePath": "objects\\Save_File_Obj\\Save_File_Obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

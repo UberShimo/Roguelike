@@ -123,8 +123,14 @@ if(monster.object_index == Summoner_Obj){
 		global.debugManLevel += 1;
 	}
 	
+	// Unlock da reaper
+	if(global.minutes < 3 && global.reaperLevel == 0){
+		global.reaperLevel = 1;
+		global.classUnlocked = true;
+	}
+	
 	// Unlock ninja
-	if(!Player_Parent.hasTakenDamage && global.ninjaLevel == 0){
+	if(!global.hasTakenDamage && global.ninjaLevel == 0){
 		global.ninjaLevel = 1;
 		global.classUnlocked = true;
 	}

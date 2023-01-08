@@ -10,10 +10,4 @@ Player_Parent.controllable = false;
 
 BlackScreen_Controller.fade = 0.02;
 
-// Unlock ninja
-if(!other.hasTakenDamage && global.ninjaLevel == 0){
-	global.ninjaLevel = 1;
-	global.classUnlocked = true;
-}
-
 instance_destroy();

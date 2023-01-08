@@ -1,0 +1,1 @@
+draw_sprite(sprite_index, 0, x+random_range(-shake, shake), y+random_range(-shake, shake));

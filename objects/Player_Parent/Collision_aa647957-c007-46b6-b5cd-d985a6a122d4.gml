@@ -2,7 +2,7 @@ if(controllable && !dodging && (!other.projectile || height < 2)){
 	HP -= other.DMG * DEF;
 	cameraShake = 4;
 	alarm[2] = 8;
-	hasTakenDamage = true;
+	global.hasTakenDamage = true;
 	
 	repeat(6){
 		instance_create_depth(x, y, 0, Blood_Obj);
