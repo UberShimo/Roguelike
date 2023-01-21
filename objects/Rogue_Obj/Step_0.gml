@@ -3,7 +3,7 @@ if(controllable){
 
 	// Attack
 	if(mouse_check_button(mb_left) && action == noone && height < 2 && !dodging){
-		if(charge >= 180){
+		if(charge >= chargeDuration){
 			action = "chargeAttack";
 			rotation = 3;
 		}
@@ -40,7 +40,7 @@ if(controllable){
 	}
 
 	// Charge mechanic
-	if(charge < 180){
-		charge += 1; // Charges in 3 sec
+	if(charge < chargeDuration){
+		charge += 1;
 	}
 }

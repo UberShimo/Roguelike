@@ -1,6 +1,9 @@
 event_inherited();
 
-DMG = 20;
+DMG = 25;
+
+image_xscale = 1.2;
+image_yscale = 1.2;
 
 alarm[0] = 40;
 

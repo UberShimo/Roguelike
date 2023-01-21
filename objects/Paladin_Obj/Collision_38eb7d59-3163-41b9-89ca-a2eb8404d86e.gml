@@ -3,7 +3,7 @@
 impactDirection = point_direction(x, y, other.x, other.y);
 angleDiff = angle_difference(direction, impactDirection);
 
-if(angleDiff > -90 && angleDiff < 90){
+if(angleDiff > -90 && angleDiff < 90 && height < 2){
 	other.DMG = other.DMG / 2;
 	// Effect
 	repeat(6){

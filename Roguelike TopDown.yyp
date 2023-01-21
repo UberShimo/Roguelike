@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "2460caaf-516b-4756-b343-a1136aa16e7d",
+            "Value": {
+                "id": "0b064e5c-208a-4574-aabf-ce4541b4535e",
+                "resourcePath": "objects\\Barrier_Crystal_Obj\\Barrier_Crystal_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "248d01f9-21db-4e69-8e67-975d4bd3ae0d",
             "Value": {
                 "id": "b6a29911-936b-4268-b2b6-3d8f5743d7d5",
@@ -1476,6 +1484,14 @@
                 "id": "c76ed541-b0cf-4008-82be-b784fa1c25e5",
                 "resourcePath": "views\\5944647f-162d-4207-9ae6-48fab43c4ba7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "59e6745c-b149-442e-bf6b-f76f7a75bb69",
+            "Value": {
+                "id": "a520df83-a9f3-4b11-9492-aec49d8c9a58",
+                "resourcePath": "sprites\\Summoner_Hurtbox\\Summoner_Hurtbox.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3103,6 +3119,14 @@
             }
         },
         {
+            "Key": "bba9937c-3cdf-4296-b6a0-e3e1aca33fb1",
+            "Value": {
+                "id": "9e4582dc-f0d4-470c-8102-5281efb19ae4",
+                "resourcePath": "sounds\\Slurp_Snd\\Slurp_Snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "bbde1c66-7fa2-48bb-b252-bb364f26d498",
             "Value": {
                 "id": "35916d54-f064-48cb-b63f-457d1d73b277",
@@ -3631,6 +3655,14 @@
             }
         },
         {
+            "Key": "dcda5437-ba1d-49da-ada4-c1927cb50ad1",
+            "Value": {
+                "id": "ca9c024b-dfc6-4891-99de-e3d2d3d46437",
+                "resourcePath": "sprites\\Dazzle_Spr\\Dazzle_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dd1a4a92-60f1-4d98-935f-e105eefb7179",
             "Value": {
                 "id": "d61587bb-1ecd-419f-8a15-25c5925e86c0",
@@ -4063,10 +4095,26 @@
             }
         },
         {
+            "Key": "ff8891fb-f2af-467d-a5b3-76c3b64dc351",
+            "Value": {
+                "id": "724da0ac-ffac-4441-aff7-48a47beef250",
+                "resourcePath": "sounds\\Nasty_Snd\\Nasty_Snd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ffa0884b-6c36-4539-9bdb-16d4c147952f",
             "Value": {
                 "id": "b71863a2-28a8-4b79-aec3-4b58d229978f",
                 "resourcePath": "sprites\\StairwayWall_Spr\\StairwayWall_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ffc65fad-932a-451c-a1a4-bea05ac13230",
+            "Value": {
+                "id": "906fd4fe-3b3d-4112-8d34-224baf88c03a",
+                "resourcePath": "sprites\\Barrier_Crystal_Spr\\Barrier_Crystal_Spr.yy",
                 "resourceType": "GMSprite"
             }
         },

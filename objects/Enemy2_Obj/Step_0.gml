@@ -20,8 +20,8 @@ if(action == noone && !dazzled){
 		warning.spawner = self;
 		warning.image_xscale *= image_xscale;
 		warning.image_yscale *= image_yscale;
-		warning.alarm[1] = 30*AS;
+		warning.alarm[1] = 40*AS;
 		
-		alarm[3] = 30*AS;
+		alarm[3] = 40*AS;
 	}
 }

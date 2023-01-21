@@ -6,5 +6,3 @@ repeat(2){
 	eff.image_yscale = s;
 	eff.speed *= 0.5;
 }
-
-audio_play_sound(Click_Snd, 0, false);

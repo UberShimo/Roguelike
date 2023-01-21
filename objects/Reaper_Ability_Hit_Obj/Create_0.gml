@@ -1,6 +1,6 @@
 event_inherited();
 
-stun = 20;
+stun = 60;
 pushback = 8;
 isDirectionalPushback = true;
 

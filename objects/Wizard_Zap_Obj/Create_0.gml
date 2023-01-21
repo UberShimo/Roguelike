@@ -1,7 +1,8 @@
 event_inherited();
 
-DMG = 40;
+DMG = 35;
 stun = 30;
+pushback = 1;
 
 effScaling = 0;
 

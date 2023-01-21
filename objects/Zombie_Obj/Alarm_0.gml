@@ -3,7 +3,7 @@ hitbox.DMG = DMG;
 
 if(HP > 0){
 	HP -= decayAmount;
-	decayAmount += originalDecayAmount*2;
+	decayAmount += originalDecayAmount;
 }
 // die
 else{

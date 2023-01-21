@@ -1,6 +1,6 @@
 event_inherited();
 
-CD = 2*60;
+CD = 3*60;
 dashes = 2;
 trippleStrike = false;
 

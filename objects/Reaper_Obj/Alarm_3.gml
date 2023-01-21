@@ -11,7 +11,7 @@ if(action == "attack"){
 	xSpeed = 0;
 	ySpeed = 0;
 	
-	alarm[5] = 12*AS;
+	alarm[5] = 12;
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Reaper_Ability_Obj);

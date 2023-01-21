@@ -7,5 +7,5 @@ className = "Shaman";
 
 portrait = Shaman_Portrait_Spr;
 attackDescription = "Shoot an orb that returns\nafter short while";
-abilityDescription = "Teleport in a blast";
-bonusDescription = "Teleport blast push away\nenemies and orbs.";
+abilityDescription = "Teleport and push away\nEVERYTHING";
+bonusDescription = "Orbs deal less damage each\ntime it hits an enemy.";

@@ -15,7 +15,7 @@ draw_sprite_ext(CD_Frame_Spr, 0, 12*pixelMultiplier, 12*pixelMultiplier, pixelMu
 
 // Draw focus icon
 if(maxFO > 1){
-	draw_sprite_ext(FO_Upgrade_Spr, 0, 52*pixelMultiplier, 16*pixelMultiplier, pixelMultiplier, pixelMultiplier, 0, c_black, 1);
+	draw_sprite_ext(FO_Upgrade_Spr, 0, 52*pixelMultiplier, 16*pixelMultiplier, pixelMultiplier, pixelMultiplier, 0, c_gray, 0.5);
 	draw_sprite_ext(FO_Upgrade_Spr, 0, 52*pixelMultiplier, 16*pixelMultiplier, pixelMultiplier, (FO-1)/(maxFO-1) * pixelMultiplier, 0, c_white, 1);
 }
 
@@ -27,7 +27,15 @@ draw_text_transformed_color(xPos+8, 2, global.monstersSlain, 2, 2, 0, c, c, c, c
 
 // Draw timer
 yPos = camera_get_view_height(view_camera[0])-24;
-timer =  string(global.minutes) + ":" + string(global.seconds);
+sZero = "";
+mZero = "";
+if(global.seconds < 10){
+	sZero = "0";
+}
+if(global.minutes < 10){
+	mZero = "0";
+}
+timer =  mZero + string(global.minutes) + ":" + sZero + string(global.seconds);
 draw_text_transformed_color(8, yPos, timer, 1, 1, 0, c, c, c, c, 0.5);
 
 // Draw minimap border

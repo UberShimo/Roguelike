@@ -1,6 +1,29 @@
 TODO{
-	Test and balance
-	Fix icon and splash art n shit
+	add playtesters
 }
 
-Title: "Evil summoner dungeon"
+playtesters font: Arial, Bold, 12
+
+attack DPS{
+	slayer: 32
+	rogue: 40
+	archer: 32
+	wizard: 24
+	gladiator: 30
+	samurai: 19
+	arbalist: 34
+	shaman: 16 > infinite
+	paladin: 12-36
+	duelist: 40
+	toolist: 4 > infinite
+	necromancer: 22
+	heavyweight: 40
+	reaper: 10 (20 if tip)
+	ninja: 16
+	chronomancer: 20
+	brute: 26 (40 if behind)
+	pirate: 20
+	mechanic: 40
+	bard: 12 / 64 / 24 / 36 / 10 (30 if going fast)
+	debugMan: 1
+}

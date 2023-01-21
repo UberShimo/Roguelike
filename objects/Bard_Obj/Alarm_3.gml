@@ -45,12 +45,11 @@ if(action == "attack"){
 		audio_play_sound(Tone3_Snd, 1, false);
 	}
 	else if(rng == 4){
-		repeat(3){
-			att = instance_create_depth(x, y, 0, Tone4_Obj);
-			att.DMG *= FO;
-			att.direction = direction+random_range(-40, 40);
-			att.velocity = random_range(2, 4);
-		}
+		att = instance_create_depth(x, y, 0, Tone4_Obj);
+		att.DMG *= FO;
+		att.direction = direction+random_range(-40, 40);
+		att.velocity = random_range(1, 3);
+		
 		audio_play_sound(Tone4_Snd, 1, false);
 	}
 	else if(rng == 5){
@@ -98,12 +97,11 @@ if(action == "ability"){
 		dir += 120;
 	}
 	
-	repeat(3){
-		att = instance_create_depth(x, y, 0, Tone4_Obj);
-		att.DMG *= FO;
-		att.direction = direction+random_range(-40, 40);
-		att.velocity = random_range(2, 4);
-	}
+	att = instance_create_depth(x, y, 0, Tone4_Obj);
+	att.DMG *= FO;
+	att.direction = direction+random_range(-40, 40);
+	att.velocity = random_range(1, 3);
+	
 	alarmBonus = 0;
 		
 	repeat(5){

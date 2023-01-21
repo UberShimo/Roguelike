@@ -16,6 +16,7 @@ destination[2] = [x, y]; // 2 coordinate variable
 alarm[0] = 60;
 alarm[2] = 60;
 direction = 90; // Facing up
+mask_index = Summoner_Hurtbox;
 
 // Dont ever forget
 maxHP = HP;

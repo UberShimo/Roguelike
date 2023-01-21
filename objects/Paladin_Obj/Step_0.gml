@@ -6,7 +6,7 @@ if(controllable){
 		action = "attack";
 		characterShake = 2;
 		rotation = -1;
-		MS = 0;
+		MS = originalMS/4;
 		alarm[3] = 30 * AS;
 		alarm[0] = 90 * AS;
 	}
@@ -16,7 +16,6 @@ if(controllable){
 		action = "ability";
 		abilityReady = false;
 		characterShake = 4;
-		rotation = -1;
 		MS = 0;
 	
 		alarm[3] = 30;

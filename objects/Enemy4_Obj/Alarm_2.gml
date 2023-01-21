@@ -17,12 +17,12 @@ else if(irandom_range(1, 2) == 1){ // 50% chance of Attacking
 		warning.image_yscale = scale;
 		warning.DMG = DMG;
 		warning.spawner = self;
-		warning.alarm[1] = 60*AS;
+		warning.alarm[1] = 80*AS;
 	}
 	
 	alarm[0] = 120*AS;
 	alarm[2] = 120*AS;
-	alarm[3] = 60*AS;
+	alarm[3] = 80*AS;
 }
 else{
 	xDestination = irandom_range(-1, 1)  * 32;

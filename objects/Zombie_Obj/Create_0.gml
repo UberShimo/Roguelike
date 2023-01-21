@@ -1,18 +1,19 @@
 image_speed = 0;
 
 // Stats
-HP = 50; // Health Points
+HP = 75; // Health Points
 // Dont ever forget
 maxHP = HP;
 DMG = 10; // Attack Damage
 AS = 1; // Attack speed
 MS = 1; // Movement Speed
 originalMS = MS; // So MS can reset
+HPheight = 16;
 
 rotation = 0; // Used to twist the character
 stunned = false;
 transparency = 1;
-decayAmount = 0.2;
+decayAmount = 1;
 originalDecayAmount = decayAmount;
 
 alarm[0] = 30;

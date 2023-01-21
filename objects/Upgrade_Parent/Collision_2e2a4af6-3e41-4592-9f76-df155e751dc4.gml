@@ -1,5 +1,4 @@
 global.relicsFound += 1;
-depth = -y;
 
 // Effects
 instance_create_depth(x, y, depth, CD_Effect);

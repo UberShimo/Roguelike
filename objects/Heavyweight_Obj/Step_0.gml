@@ -59,6 +59,12 @@ if(controllable){
 		landPAM = false;
 		att = instance_create_depth(x, y, depth, Heavyweight_Land_Obj);
 		att.DMG *= FO;
-		alarm[4] = 1;
+		att.image_alpha = 0.5;
+		sweetspot = instance_create_depth(x, y, depth, Heavyweight_Land_Obj);
+		sweetspot.DMG *= FO;
+		sweetspot.pushback = 1;
+		sweetspot.image_xscale = 0.2;
+		sweetspot.image_yscale = 0.2;
+		FO = 1; // Never forget
 	}
 }

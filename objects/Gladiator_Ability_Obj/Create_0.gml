@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 24;
+DMG = 20;
 stun = 60;
 pushback = 6;
 isDirectionalPushback = true;

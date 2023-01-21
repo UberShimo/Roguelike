@@ -7,5 +7,5 @@ className = "Necromancer";
 
 portrait = Necromancer_Portrait_Spr;
 attackDescription = "Spawn a swarm";
-abilityDescription = "Spawn a zombie that decays";
-bonusDescription = "Your swarm heal your Zombies.";
+abilityDescription = "Spawn a jank retard\nthat decays";
+bonusDescription = "Your swarm heal your retards.";

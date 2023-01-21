@@ -1,6 +1,6 @@
 event_inherited();
 
-stun = 5;
+stun = 3;
 isAnActualHit = false;
 
 image_xscale = 3;

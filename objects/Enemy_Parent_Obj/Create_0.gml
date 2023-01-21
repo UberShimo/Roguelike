@@ -19,5 +19,9 @@ xPush = 0;
 yPush = 0;
 frictionAmount = 0.5;
 shake = 0;
+HPheight = 12;
+dazzleImageIndex = 0;
+dazzleImageSpeed = 0.25;
+dazzleScale = 1.5;
 
 hitboxList = ds_list_create();

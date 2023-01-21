@@ -7,5 +7,5 @@ className = "Paladin";
 
 portrait = Paladin_Portrait_Spr;
 attackDescription = "Slam ground creating\n3 shockwaves";
-abilityDescription = "Slam ground creating a\nhealing area";
-bonusDescription = "Reduce damage taken from the\nfront by 50%.";
+abilityDescription = "SMASH ground creating a blast\nand a healing area";
+bonusDescription = "Takes less damage from\nthe front.";

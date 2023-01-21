@@ -6,7 +6,7 @@ if(controllable){
 		action = "attack";
 	
 		alarm[3] = 2;
-		alarm[0] = 60 * AS;
+		alarm[0] = 45 * AS;
 	}
 
 	// Ability
@@ -16,11 +16,11 @@ if(controllable){
 	
 		alarm[3] = 2;
 		alarm[1] = CD*CDchanger;
-		alarm[0] = 20;
+		alarm[0] = 15;
 	}
 
 	// Tripple arrow mechanic
-	if(trippleArrowCharge < 120){
-		trippleArrowCharge += 1; // Charges in 2 sec
+	if(trippleArrowCharge < trippleArrowChargeDuration){
+		trippleArrowCharge += 1;
 	}
 }

@@ -1,6 +1,6 @@
 event_inherited();
 
-DMG = 5;
+DMG = 4;
 stun = 2;
 
 scale = random_range(0.2, 0.3);

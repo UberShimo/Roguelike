@@ -8,7 +8,6 @@ if(controllable){
 		rotation = 1;
 		alarm[3] = 8 * AS;
 		alarm[0] = 90 * AS;
-		alarm[5] = 60 * AS;
 		alarm[11] = 60 * AS;
 		// For safety so alarm 3 cant go to 0
 		if(alarm[3] < 1){

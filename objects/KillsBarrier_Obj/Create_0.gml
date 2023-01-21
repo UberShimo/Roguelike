@@ -1,3 +1,5 @@
+event_inherited();
+
 killGoal = global.monstersSlain+20;
 fade = -0.1;
 

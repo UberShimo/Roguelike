@@ -11,8 +11,7 @@ if(action == "attack"){
 }
 else if(action == "ability"){
 	att = instance_create_depth(x, y, 0, Brute_Attack_Obj);
-	att.DMG = 200;
-	att.DMG *= FO;
+	att.DMG = 300 * FO;
 	att.image_xscale = 1.5;
 	att.image_yscale = 1.5;
 	audio_play_sound(Explosion_Snd, 0, false);

@@ -24,11 +24,11 @@ for(i = 0; i < (xGrid/wallWidth) * hTiles + 1; i++){ // The + 1 is because the d
 	instance_create_depth(x + wallWidth/2 + i*wallWidth, y+yGrid*vTiles+36, depth, Wall1_Obj);
 }
 
+// Spawn stairway. Cant be spawned in centre
 if(global.dungeonDepth < 3){
-	// Spawn stairway. Cant be spawned in centre
 	hRng = irandom_range(0, hTiles-1);
 	vRng = irandom_range(0, vTiles-1);
-	while(hRng > 1 && hRng < 5 && vRng > 1 && vRng < 5){
+	while(hRng == 2 && vRng == 2){
 		hRng = irandom_range(0, hTiles-1);
 		vRng = irandom_range(0, vTiles-1);
 	}
@@ -114,21 +114,35 @@ repeat(vTiles){
 	y += yGrid;
 }
 
-x = startX;
-y = startY;
+// Spawn barrier crystal
+if(global.dungeonDepth < 3){
+	x = startX + irandom_range(0, hTiles-1) * xGrid;
+	y = startY + irandom_range(0, vTiles-1) * yGrid;
+	
+	// Redo random position if meeting stairway
+	while(place_meeting(x, y, StairwayDown_Obj)
+	|| place_meeting(x, y, StairwayUp_Obj)){
+		x = startX + irandom_range(0, hTiles-1) * xGrid;
+		y = startY + irandom_range(0, vTiles-1) * yGrid;
+	}
+	
+	// Spawn da crystal
+	instance_create_depth(x+xGrid/2+wallWidth/2, y+yGrid/2+wallHeight/2, depth, Barrier_Crystal_Obj);
+}
 
 // Spawn upgrades
 repeat(2){
 	// Random position
-	x = irandom_range(0, hTiles) * xGrid;
-	y = irandom_range(0, vTiles) * yGrid;
+	x = startX + irandom_range(0, hTiles-1) * xGrid;
+	y = startY + irandom_range(0, vTiles-1) * yGrid;
 	
 	// Redo random position if meeting stairway
 	while(place_meeting(x, y, StairwayDown_Obj)
 	|| place_meeting(x, y, StairwayUp_Obj)
-	|| place_meeting(x, y, Upgrade_Parent)){
-		x = irandom_range(0, hTiles) * xGrid;
-		y = irandom_range(0, vTiles) * yGrid;
+	|| place_meeting(x, y, Upgrade_Parent)
+	|| place_meeting(x, y, Barrier_Crystal_Obj)){
+		x = startX + irandom_range(0, hTiles-1) * xGrid;
+		y = startY + irandom_range(0, vTiles-1) * yGrid;
 	}
 	
 	rng = irandom_range(1, 4);

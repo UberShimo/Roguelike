@@ -6,9 +6,9 @@ if(controllable){
 		action = "attack";
 		canJump = false;
 	
-		alarm[3] = 24 * AS;
-		alarm[0] = 48 * AS;
-		alarm[11] = 48 * AS;
+		alarm[3] = 20 * AS;
+		alarm[0] = 60 * AS;
+		alarm[11] = 40 * AS;
 	}
 
 	// BUG

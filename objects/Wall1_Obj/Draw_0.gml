@@ -1,1 +1,1 @@
-draw_sprite_ext(Wall1_Spr, wallDecor, x, y, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(Wall1_Spr, wallDecor, x, y, image_xscale, image_yscale, 0, c_white, image_alpha);

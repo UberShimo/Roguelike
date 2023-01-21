@@ -1,3 +1,5 @@
+event_inherited();
+
 depth = -y;
 
 image_xscale = 2;
